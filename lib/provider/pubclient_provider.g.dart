@@ -6,7 +6,7 @@ part of 'pubclient_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$packageInfoHash() => r'834ae8b6390b3fa1088387db9e6c88fbe66ba2de';
+String _$allInfoPackageHash() => r'96c9270ac7ac5c548b94a2ba7d0072399170a711';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -29,27 +29,27 @@ class _SystemHash {
   }
 }
 
-/// See also [packageInfo].
-@ProviderFor(packageInfo)
-const packageInfoProvider = PackageInfoFamily();
+/// See also [allInfoPackage].
+@ProviderFor(allInfoPackage)
+const allInfoPackageProvider = AllInfoPackageFamily();
 
-/// See also [packageInfo].
-class PackageInfoFamily extends Family<AsyncValue<PubPackage>> {
-  /// See also [packageInfo].
-  const PackageInfoFamily();
+/// See also [allInfoPackage].
+class AllInfoPackageFamily extends Family<AsyncValue<AllInfoPackage>> {
+  /// See also [allInfoPackage].
+  const AllInfoPackageFamily();
 
-  /// See also [packageInfo].
-  PackageInfoProvider call(
+  /// See also [allInfoPackage].
+  AllInfoPackageProvider call(
     String packageName,
   ) {
-    return PackageInfoProvider(
+    return AllInfoPackageProvider(
       packageName,
     );
   }
 
   @override
-  PackageInfoProvider getProviderOverride(
-    covariant PackageInfoProvider provider,
+  AllInfoPackageProvider getProviderOverride(
+    covariant AllInfoPackageProvider provider,
   ) {
     return call(
       provider.packageName,
@@ -68,32 +68,32 @@ class PackageInfoFamily extends Family<AsyncValue<PubPackage>> {
       _allTransitiveDependencies;
 
   @override
-  String? get name => r'packageInfoProvider';
+  String? get name => r'allInfoPackageProvider';
 }
 
-/// See also [packageInfo].
-class PackageInfoProvider extends AutoDisposeFutureProvider<PubPackage> {
-  /// See also [packageInfo].
-  PackageInfoProvider(
+/// See also [allInfoPackage].
+class AllInfoPackageProvider extends AutoDisposeFutureProvider<AllInfoPackage> {
+  /// See also [allInfoPackage].
+  AllInfoPackageProvider(
     String packageName,
   ) : this._internal(
-          (ref) => packageInfo(
-            ref as PackageInfoRef,
+          (ref) => allInfoPackage(
+            ref as AllInfoPackageRef,
             packageName,
           ),
-          from: packageInfoProvider,
-          name: r'packageInfoProvider',
+          from: allInfoPackageProvider,
+          name: r'allInfoPackageProvider',
           debugGetCreateSourceHash:
               const bool.fromEnvironment('dart.vm.product')
                   ? null
-                  : _$packageInfoHash,
-          dependencies: PackageInfoFamily._dependencies,
+                  : _$allInfoPackageHash,
+          dependencies: AllInfoPackageFamily._dependencies,
           allTransitiveDependencies:
-              PackageInfoFamily._allTransitiveDependencies,
+              AllInfoPackageFamily._allTransitiveDependencies,
           packageName: packageName,
         );
 
-  PackageInfoProvider._internal(
+  AllInfoPackageProvider._internal(
     super._createNotifier, {
     required super.name,
     required super.dependencies,
@@ -107,12 +107,12 @@ class PackageInfoProvider extends AutoDisposeFutureProvider<PubPackage> {
 
   @override
   Override overrideWith(
-    FutureOr<PubPackage> Function(PackageInfoRef provider) create,
+    FutureOr<AllInfoPackage> Function(AllInfoPackageRef provider) create,
   ) {
     return ProviderOverride(
       origin: this,
-      override: PackageInfoProvider._internal(
-        (ref) => create(ref as PackageInfoRef),
+      override: AllInfoPackageProvider._internal(
+        (ref) => create(ref as AllInfoPackageRef),
         from: from,
         name: null,
         dependencies: null,
@@ -124,13 +124,13 @@ class PackageInfoProvider extends AutoDisposeFutureProvider<PubPackage> {
   }
 
   @override
-  AutoDisposeFutureProviderElement<PubPackage> createElement() {
-    return _PackageInfoProviderElement(this);
+  AutoDisposeFutureProviderElement<AllInfoPackage> createElement() {
+    return _AllInfoPackageProviderElement(this);
   }
 
   @override
   bool operator ==(Object other) {
-    return other is PackageInfoProvider && other.packageName == packageName;
+    return other is AllInfoPackageProvider && other.packageName == packageName;
   }
 
   @override
@@ -142,146 +142,18 @@ class PackageInfoProvider extends AutoDisposeFutureProvider<PubPackage> {
   }
 }
 
-mixin PackageInfoRef on AutoDisposeFutureProviderRef<PubPackage> {
+mixin AllInfoPackageRef on AutoDisposeFutureProviderRef<AllInfoPackage> {
   /// The parameter `packageName` of this provider.
   String get packageName;
 }
 
-class _PackageInfoProviderElement
-    extends AutoDisposeFutureProviderElement<PubPackage> with PackageInfoRef {
-  _PackageInfoProviderElement(super.provider);
+class _AllInfoPackageProviderElement
+    extends AutoDisposeFutureProviderElement<AllInfoPackage>
+    with AllInfoPackageRef {
+  _AllInfoPackageProviderElement(super.provider);
 
   @override
-  String get packageName => (origin as PackageInfoProvider).packageName;
-}
-
-String _$packageScoreHash() => r'df853c1ecc3db6910d97569909736d0b0931e046';
-
-/// See also [packageScore].
-@ProviderFor(packageScore)
-const packageScoreProvider = PackageScoreFamily();
-
-/// See also [packageScore].
-class PackageScoreFamily extends Family<AsyncValue<PackageScore?>> {
-  /// See also [packageScore].
-  const PackageScoreFamily();
-
-  /// See also [packageScore].
-  PackageScoreProvider call(
-    String packageName,
-  ) {
-    return PackageScoreProvider(
-      packageName,
-    );
-  }
-
-  @override
-  PackageScoreProvider getProviderOverride(
-    covariant PackageScoreProvider provider,
-  ) {
-    return call(
-      provider.packageName,
-    );
-  }
-
-  static const Iterable<ProviderOrFamily>? _dependencies = null;
-
-  @override
-  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
-
-  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
-
-  @override
-  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
-      _allTransitiveDependencies;
-
-  @override
-  String? get name => r'packageScoreProvider';
-}
-
-/// See also [packageScore].
-class PackageScoreProvider extends AutoDisposeFutureProvider<PackageScore?> {
-  /// See also [packageScore].
-  PackageScoreProvider(
-    String packageName,
-  ) : this._internal(
-          (ref) => packageScore(
-            ref as PackageScoreRef,
-            packageName,
-          ),
-          from: packageScoreProvider,
-          name: r'packageScoreProvider',
-          debugGetCreateSourceHash:
-              const bool.fromEnvironment('dart.vm.product')
-                  ? null
-                  : _$packageScoreHash,
-          dependencies: PackageScoreFamily._dependencies,
-          allTransitiveDependencies:
-              PackageScoreFamily._allTransitiveDependencies,
-          packageName: packageName,
-        );
-
-  PackageScoreProvider._internal(
-    super._createNotifier, {
-    required super.name,
-    required super.dependencies,
-    required super.allTransitiveDependencies,
-    required super.debugGetCreateSourceHash,
-    required super.from,
-    required this.packageName,
-  }) : super.internal();
-
-  final String packageName;
-
-  @override
-  Override overrideWith(
-    FutureOr<PackageScore?> Function(PackageScoreRef provider) create,
-  ) {
-    return ProviderOverride(
-      origin: this,
-      override: PackageScoreProvider._internal(
-        (ref) => create(ref as PackageScoreRef),
-        from: from,
-        name: null,
-        dependencies: null,
-        allTransitiveDependencies: null,
-        debugGetCreateSourceHash: null,
-        packageName: packageName,
-      ),
-    );
-  }
-
-  @override
-  AutoDisposeFutureProviderElement<PackageScore?> createElement() {
-    return _PackageScoreProviderElement(this);
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return other is PackageScoreProvider && other.packageName == packageName;
-  }
-
-  @override
-  int get hashCode {
-    var hash = _SystemHash.combine(0, runtimeType.hashCode);
-    hash = _SystemHash.combine(hash, packageName.hashCode);
-
-    return _SystemHash.finish(hash);
-  }
-}
-
-mixin PackageScoreRef on AutoDisposeFutureProviderRef<PackageScore?> {
-  /// The parameter `packageName` of this provider.
-  String get packageName;
-}
-
-class _PackageScoreProviderElement
-    extends AutoDisposeFutureProviderElement<PackageScore?>
-    with PackageScoreRef {
-  _PackageScoreProviderElement(super.provider);
-
-  @override
-  String get packageName => (origin as PackageScoreProvider).packageName;
+  String get packageName => (origin as AllInfoPackageProvider).packageName;
 }
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
