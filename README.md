@@ -1,0 +1,15 @@
+<div align="center">
+  <h2>Sviluppa la tua prima applicazione per Linux con Flutter</h2>
+  <h5>Linux Day 2024 Presentation</h5>
+  <p>
+    <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"></a>
+    <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"></a>
+    <a href="https://www.apache.org/licenses/LICENSE-2.0.html"><img src="https://img.shields.io/badge/licence-Apache%202.0-yellow?style=for-the-badge&"></a>
+  </p>
+</div>
+
+La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.dev/packages/flutter_deck) di [Mangirdas Kazlauskas](https://kazlauskas.dev/about-me/).
+
+#### Abstract
+
+> Flutter si è affermato come framework per lo sviluppo di applicazioni multi-piattaforma, supportando Android, iOS, Web e sistemi Desktop (Linux, macOS e Windows). La sua crescente popolarità ha catturato l'attenzione di importanti aziende del settore, inclusa Canonical, che ha adottato Flutter per sviluppare applicazioni come l'installer di Ubuntu a partire dalla versione 23.04. In questo talk vedremo come si può sviluppare una applicazione per il desktop Linux con Flutter, concentrandoci sulle migliori pratiche e sui pacchetti più efficaci per implementare funzionalità, dimostrando come questo framework possa potenziare lo sviluppo di Software Libero e Open Source.
