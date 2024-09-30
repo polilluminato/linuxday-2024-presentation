@@ -3,11 +3,17 @@ import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:linuxday_2024_presentation/provider/service_locator.dart';
+import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
+import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
+import 'package:window_manager/window_manager.dart';
 
 import 'slides/0_first_slide.dart';
-import 'slides/split_slide.dart';
+import 'slides/api_call/api_call_slide.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // Must add this line.
+  await windowManager.ensureInitialized();
   setupLocator();
 
   runApp(const ProviderScope(child: LinuxDayPresentation()));
@@ -19,6 +25,8 @@ class LinuxDayPresentation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterDeckApp(
+      darkTheme: getBrandThemeDataDark(),
+      themeMode: ThemeMode.dark,
       speakerInfo: const FlutterDeckSpeakerInfo(
         name: 'Alberto Bonacina',
         description:
@@ -28,8 +36,7 @@ class LinuxDayPresentation extends StatelessWidget {
       ),
       configuration: const FlutterDeckConfiguration(
         background: FlutterDeckBackgroundConfiguration(
-          light: FlutterDeckBackground.solid(Color(0xFFB5FFFC)),
-          dark: FlutterDeckBackground.solid(Color(0xFF16222A)),
+          dark: FlutterDeckBackground.solid(BrandColors.backgroundColorDark),
         ),
         controls: FlutterDeckControlsConfiguration(
           presenterToolbarVisible: true,
@@ -57,11 +64,15 @@ class LinuxDayPresentation extends StatelessWidget {
           showHeader: false,
         ),
         showProgress: true,
+        progressIndicator: FlutterDeckProgressIndicator.solid(
+          color: BrandColors.accentColor,
+          backgroundColor: BrandColors.accentColorDark,
+        ),
         transition: FlutterDeckTransition.fade(),
       ),
       slides: const [
         FirstSlide(),
-        SplitSlide(),
+        ApiCallSlide(),
       ],
     );
   }

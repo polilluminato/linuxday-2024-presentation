@@ -5,8 +5,8 @@ class FirstSlide extends FlutterDeckSlideWidget {
   const FirstSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/first-slide',
-            title: 'First Slide',
+            route: '/talk-title-slide',
+            title: 'Talk Title Slide',
             footer: FlutterDeckFooterConfiguration(showFooter: false),
           ),
         );
