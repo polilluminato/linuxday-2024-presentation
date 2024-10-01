@@ -15,6 +15,7 @@ dependencies:
   phosphor_flutter: ^2.1.0
   pub_api_client: ^2.7.1
   riverpod_annotation: ^2.3.5
+  url_launcher: ^6.3.0
   window_manager: ^0.4.2
   yaru: ^5.2.1
 
