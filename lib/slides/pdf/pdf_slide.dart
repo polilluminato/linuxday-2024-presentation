@@ -3,6 +3,8 @@ import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:linuxday_2024_presentation/ui/package_card.dart';
 import 'package:linuxday_2024_presentation/ui/sidebar_column.dart';
+import 'package:linuxday_2024_presentation/utils/utils.dart';
+import 'package:pdfrx/pdfrx.dart';
 
 class PdfSlide extends FlutterDeckSlideWidget {
   const PdfSlide()
@@ -28,9 +30,44 @@ class PdfSlide extends FlutterDeckSlideWidget {
         );
       },
       rightBuilder: (context) {
-        return Text(
-          'Here goes the RIGHT section content of the slide',
-          style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+        return Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Local PDF",
+                  style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+                ),
+                SizedBox(
+                  height: getScreenHeight(context) * .7,
+                  width: getScreenWidth(context) * .3,
+                  child: PdfViewer.asset(
+                    "assets/pdf/sample.pdf",
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Remote PDF",
+                  style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+                ),
+                SizedBox(
+                  height: getScreenHeight(context) * .7,
+                  width: getScreenWidth(context) * .30,
+                  child: PdfViewer.uri(
+                    Uri.parse(
+                      'https://cdn.nakamotoinstitute.org/docs/bitcoin.pdf',
+                    ),
+                  ),
+                ),
+              ],
+            )
+          ],
         );
       },
     );

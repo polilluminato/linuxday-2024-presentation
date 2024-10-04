@@ -13,3 +13,9 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
 #### Abstract
 
 > Flutter si è affermato come framework per lo sviluppo di applicazioni multi-piattaforma, supportando Android, iOS, Web e sistemi Desktop (Linux, macOS e Windows). La sua crescente popolarità ha catturato l'attenzione di importanti aziende del settore, inclusa Canonical, che ha adottato Flutter per sviluppare applicazioni come l'installer di Ubuntu a partire dalla versione 23.04. In questo talk vedremo come si può sviluppare una applicazione per il desktop Linux con Flutter, concentrandoci sulle migliori pratiche e sui pacchetti più efficaci per implementare funzionalità, dimostrando come questo framework possa potenziare lo sviluppo di Software Libero e Open Source.
+
+## Packages
+
+* PDF
+  * [pdfrx](https://pub.dev/packages/pdfrx): pdfrx is a rich and fast PDF viewer implementation built on the top of PDFium. The plugin supports Android, iOS, Windows, macOS, Linux, and Web.
+  * [pdf](https://pub.dev/packages/pdf): A pdf producer for Dart. It can create pdf files for both web or flutter.

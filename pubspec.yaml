@@ -12,6 +12,7 @@ dependencies:
   flutter_deck: ^0.16.1
   flutter_riverpod: ^2.5.1
   get_it: ^8.0.0
+  pdfrx: ^1.0.84
   phosphor_flutter: ^2.1.0
   pub_api_client: ^2.7.1
   riverpod_annotation: ^2.3.5
@@ -33,3 +34,4 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/pdf/
