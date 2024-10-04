@@ -1,38 +1,30 @@
 import 'package:flutter/material.dart';
 
-class Dimens {
-  // add a private constructor to prevent this class being instantiated
-  // e.g. invoke `Dimens()` accidentally
-  Dimens._();
+const double kMarginHuge = 32;
+const double kMarginBig = 24;
+const double kMarginMain = 16;
+const double kMarginSmall = 8;
+const double kMarginTiny = 4;
 
-  static const double hugeRoundedCorner = 32;
-  static const double bigRoundedCorner = 24;
-  static const double mainRoundedCorner = 16;
-  static const double smallRoundedCorner = 8;
-  static const double tinyRoundedCorner = 4;
+const double kSpaceHuge = 32;
+const double kSpaceBig = 24;
+const double kSpaceMain = 16;
+const double kSpaceSmall = 8;
+const double kSpaceTiny = 4;
 
-  static const double hugePadding = 32;
-  static const double bigPadding = 24;
-  static const double mainPadding = 16;
-  static const double smallPadding = 8;
-  static const double tinyPadding = 4;
+const double kPaddingHuge = 32;
+const double kPaddingBig = 24;
+const double kPaddingMain = 16;
+const double kPaddingSmall = 8;
+const double kPaddingTiny = 4;
 
-  static const double hugeMargin = 32;
-  static const double bigMargin = 24;
-  static const double mainMargin = 16;
-  static const double smallMargin = 8;
-  static const double tinyMargin = 4;
+const double kRoundedCornerHuge = 32;
+const double kRoundedCornerBig = 24;
+const double kRoundedCornerMain = 16;
+const double kRoundedCornerSmall = 8;
+const double kRoundedCornerTiny = 4;
 
-  static const double hugeSpace = 32;
-  static const double bigSpace = 24;
-  static const double mainSpace = 16;
-  static const double smallSpace = 8;
-  static const double tinySpace = 4;
+const double kSliderHeight = 16;
 
-  static const double heightSlider = 16;
-
-  static BorderRadius mainBorderRadius =
-      BorderRadius.circular(mainRoundedCorner);
-  static BorderRadius smallBorderRadius =
-      BorderRadius.circular(smallRoundedCorner);
-}
+BorderRadius kBorderRadiusMain = BorderRadius.circular(kRoundedCornerMain);
+BorderRadius kBorderRadiusSmall = BorderRadius.circular(kRoundedCornerSmall);

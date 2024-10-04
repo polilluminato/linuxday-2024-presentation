@@ -3,6 +3,24 @@ import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:linuxday_2024_presentation/provider/service_locator.dart';
+import 'package:linuxday_2024_presentation/slides/agenda_slide.dart';
+import 'package:linuxday_2024_presentation/slides/analytics/analytics_slide.dart';
+import 'package:linuxday_2024_presentation/slides/animation/animation_slide.dart';
+import 'package:linuxday_2024_presentation/slides/audio/audio_slide.dart';
+import 'package:linuxday_2024_presentation/slides/charts/charts_slide.dart';
+import 'package:linuxday_2024_presentation/slides/database/database_slide.dart';
+import 'package:linuxday_2024_presentation/slides/file_picker/file_picker_slide.dart';
+import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
+import 'package:linuxday_2024_presentation/slides/logging/logging_slide.dart';
+import 'package:linuxday_2024_presentation/slides/maps/maps_slide.dart';
+import 'package:linuxday_2024_presentation/slides/markdown/markdown_slide.dart';
+import 'package:linuxday_2024_presentation/slides/notification/notification_slide.dart';
+import 'package:linuxday_2024_presentation/slides/pdf/pdf_slide.dart';
+import 'package:linuxday_2024_presentation/slides/print/print_slide.dart';
+import 'package:linuxday_2024_presentation/slides/conclusioni_slide.dart';
+import 'package:linuxday_2024_presentation/slides/tables/tables_slide.dart';
+import 'package:linuxday_2024_presentation/slides/video/video_slide.dart';
+import 'package:linuxday_2024_presentation/slides/window/window_slide.dart';
 import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:window_manager/window_manager.dart';
@@ -72,7 +90,25 @@ class LinuxDayPresentation extends StatelessWidget {
       ),
       slides: const [
         FirstSlide(),
+        AgendaSlide(),
+        IntroFlutterSlide(),
         ApiCallSlide(),
+        AudioSlide(),
+        VideoSlide(),
+        WindowSlide(),
+        FilePickerSlide(),
+        AnimationSlide(),
+        MapsSlide(),
+        LoggingSlide(),
+        NotificationSlide(),
+        MarkdownSlide(),
+        ChartsSlide(),
+        PdfSlide(),
+        TablesSlide(),
+        DatabaseSlide(),
+        AnalyticsSlide(),
+        PrintSlide(),
+        ConclusioniSlide(),
       ],
     );
   }

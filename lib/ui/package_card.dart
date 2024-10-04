@@ -27,10 +27,10 @@ class PackageCard extends ConsumerWidget {
               color: BrandColors.onBackgroundColorLight,
               width: 1,
             ),
-            borderRadius: Dimens.smallBorderRadius,
+            borderRadius: kBorderRadiusSmall,
           ),
-          padding: const EdgeInsets.all(Dimens.mainPadding),
-          margin: const EdgeInsets.only(bottom: Dimens.hugeMargin),
+          padding: const EdgeInsets.all(kPaddingMain),
+          margin: const EdgeInsets.only(bottom: kMarginHuge),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -57,18 +57,18 @@ class PackageCard extends ConsumerWidget {
                 ],
               ),
               const Divider(),
-              Text(
+              /*Text(
                 singlePackageAllInfo.package.description,
                 style: textTheme.titleMedium,
-              ),
-              gapH(Dimens.bigSpace),
+              ),*/
+              gapH(kSpaceBig),
               Row(
                 children: [
                   Icon(
                     PhosphorIcons.thumbsUp(),
                     size: 24,
                   ),
-                  gapW(Dimens.smallSpace),
+                  gapW(kSpaceSmall),
                   Text(
                     singlePackageAllInfo.packageScore!.likeCount.toString(),
                     style: textTheme.headlineSmall,
@@ -78,7 +78,7 @@ class PackageCard extends ConsumerWidget {
                     PhosphorIcons.sparkle(),
                     size: 24,
                   ),
-                  gapW(Dimens.smallSpace),
+                  gapW(kSpaceSmall),
                   Text(
                     singlePackageAllInfo.packageScore!.grantedPoints.toString(),
                     style: textTheme.headlineSmall,
@@ -88,7 +88,7 @@ class PackageCard extends ConsumerWidget {
                     PhosphorIcons.users(),
                     size: 24,
                   ),
-                  gapW(Dimens.smallSpace),
+                  gapW(kSpaceSmall),
                   Text(
                     (singlePackageAllInfo.packageScore!.popularityScore! * 100)
                         .ceil()

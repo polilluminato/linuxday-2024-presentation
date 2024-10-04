@@ -4,13 +4,13 @@ import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:linuxday_2024_presentation/ui/package_card.dart';
 import 'package:linuxday_2024_presentation/ui/sidebar_column.dart';
 
-class ApiCallSlide extends FlutterDeckSlideWidget {
-  const ApiCallSlide()
+class AnimationSlide extends FlutterDeckSlideWidget {
+  const AnimationSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/api-call-slide',
+            route: '/animation-slide',
             header: FlutterDeckHeaderConfiguration(
-              title: 'Chiamate Api',
+              title: 'Animazioni',
             ),
           ),
         );
@@ -22,7 +22,9 @@ class ApiCallSlide extends FlutterDeckSlideWidget {
       leftBuilder: (context) {
         return const SidebarColumn(
           children: [
-            PackageCard(package: "dio"),
+            PackageCard(package: "lottie"),
+            PackageCard(package: "flutter_animate"),
+            PackageCard(package: "rive"),
           ],
         );
       },

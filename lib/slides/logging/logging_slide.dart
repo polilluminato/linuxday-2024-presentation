@@ -4,13 +4,13 @@ import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:linuxday_2024_presentation/ui/package_card.dart';
 import 'package:linuxday_2024_presentation/ui/sidebar_column.dart';
 
-class ApiCallSlide extends FlutterDeckSlideWidget {
-  const ApiCallSlide()
+class LoggingSlide extends FlutterDeckSlideWidget {
+  const LoggingSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/api-call-slide',
+            route: '/logging-slide',
             header: FlutterDeckHeaderConfiguration(
-              title: 'Chiamate Api',
+              title: 'Logging',
             ),
           ),
         );
@@ -22,7 +22,8 @@ class ApiCallSlide extends FlutterDeckSlideWidget {
       leftBuilder: (context) {
         return const SidebarColumn(
           children: [
-            PackageCard(package: "dio"),
+            PackageCard(package: "talker_flutter"),
+            PackageCard(package: "talker_dio_logger"),
           ],
         );
       },

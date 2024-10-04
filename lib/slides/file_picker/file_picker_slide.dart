@@ -4,13 +4,13 @@ import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:linuxday_2024_presentation/ui/package_card.dart';
 import 'package:linuxday_2024_presentation/ui/sidebar_column.dart';
 
-class ApiCallSlide extends FlutterDeckSlideWidget {
-  const ApiCallSlide()
+class FilePickerSlide extends FlutterDeckSlideWidget {
+  const FilePickerSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/api-call-slide',
+            route: '/file-picker-slide',
             header: FlutterDeckHeaderConfiguration(
-              title: 'Chiamate Api',
+              title: 'File Picker',
             ),
           ),
         );
@@ -22,7 +22,8 @@ class ApiCallSlide extends FlutterDeckSlideWidget {
       leftBuilder: (context) {
         return const SidebarColumn(
           children: [
-            PackageCard(package: "dio"),
+            PackageCard(package: "image_picker"),
+            PackageCard(package: "file_picker"),
           ],
         );
       },
