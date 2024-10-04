@@ -4,6 +4,7 @@
 
 list(APPEND FLUTTER_PLUGIN_LIST
   gtk
+  rive_common
   screen_retriever
   url_launcher_linux
   window_manager
