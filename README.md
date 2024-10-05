@@ -14,6 +14,23 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
 
 > Flutter si è affermato come framework per lo sviluppo di applicazioni multi-piattaforma, supportando Android, iOS, Web e sistemi Desktop (Linux, macOS e Windows). La sua crescente popolarità ha catturato l'attenzione di importanti aziende del settore, inclusa Canonical, che ha adottato Flutter per sviluppare applicazioni come l'installer di Ubuntu a partire dalla versione 23.04. In questo talk vedremo come si può sviluppare una applicazione per il desktop Linux con Flutter, concentrandoci sulle migliori pratiche e sui pacchetti più efficaci per implementare funzionalità, dimostrando come questo framework possa potenziare lo sviluppo di Software Libero e Open Source.
 
+## Applicazioni d'esempio
+
+  * [musicpod](https://github.com/ubuntu-flutter-community/musicpod): Music, radio, television and podcast player for Ubuntu, Windows, MacOs and maybe soon Android 
+  * [appflowy](https://github.com/AppFlowy-IO/appflowy): Bring projects, wikis, and teams together with AI. AppFlowy is an AI collaborative workspace where you achieve more without losing control of your data. The best open source alternative to Notion
+  * [rustdesk](https://github.com/rustdesk/rustdesk): An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer
+  * [spotube](https://github.com/KRTirtho/spotube): 🎧 Open source Spotify client that doesn't require Premium nor uses Electron! Available for both desktop & mobile! 
+  * [authpass](https://github.com/authpass/authpass): AuthPass - Password Manager based on Flutter for all platforms. Keepass 2.x (kdbx 3.x) compatible
+  * [appimagepool](https://github.com/prateekmedia/appimagepool): A simple, modern AppImageHub Client, powered by flutter
+  * [app-center](https://github.com/ubuntu/app-center): App Store for Ubuntu made with Flutter 🧡 💙 
+  * [ubuntu-desktop-provision](https://github.com/canonical/ubuntu-desktop-provision): Ubuntu Desktop Provision 
+
+## Repo utili
+
+  * [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop): A curated list of awesome things related to Flutter desktop
+  * [awesome-flutter-linux](https://github.com/jpnurmi/awesome-flutter-linux):  A curated list of awesome Linux-specific Flutter packages and projects
+  * [awesome-flutter](https://github.com/Solido/awesome-flutter):  An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more
+
 ## Packages
 
 * Animazioni
