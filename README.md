@@ -37,6 +37,8 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
   * [lottie](https://pub.dev/packages/lottie): Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player
   * [flutter_animate](https://pub.dev/packages/flutter_animate): Add beautiful animated effects & builders in Flutter, via an easy, customizable, unified API
   * [rive](https://pub.dev/packages/rive): Rive Flutter Runtime. This package provides runtime functionality for playing back and interacting with animations built with the Rive editor 
+* Grafici
+  * [fl_chart](https://pub.dev/packages/fl_chart): A highly customizable Flutter chart library that supports Line Chart, Bar Chart, Pie Chart, Scatter Chart, and Radar Chart
 * PDF
   * [pdfrx](https://pub.dev/packages/pdfrx): pdfrx is a rich and fast PDF viewer implementation built on the top of PDFium. The plugin supports Android, iOS, Windows, macOS, Linux, and Web
   * [pdf](https://pub.dev/packages/pdf): A pdf producer for Dart. It can create pdf files for both web or flutter

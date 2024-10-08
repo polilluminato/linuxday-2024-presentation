@@ -24,7 +24,7 @@ class IntroFlutterSlide extends FlutterDeckSlideWidget {
           children: [
             Image.asset(
               'assets/images/flutter-logo.png',
-              width: getScreenWidth(context) * .5,
+              width: getScreenWidth(context) * .3,
             ),
             const SizedBox(height: kMarginMain),
             Container(

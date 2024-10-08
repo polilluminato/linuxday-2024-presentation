@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class ConclusioniSlide extends FlutterDeckSlideWidget {
-  const ConclusioniSlide()
+class SpoilerSlide extends FlutterDeckSlideWidget {
+  const SpoilerSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/app-repo-slide',
             header: FlutterDeckHeaderConfiguration(
-              title: 'Conclusioni',
+              title: 'Spoiler...',
             ),
             steps: 4, // Define the number of steps for the slide
           ),

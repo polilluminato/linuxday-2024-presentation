@@ -18,8 +18,10 @@ class AgendaSlide extends FlutterDeckSlideWidget {
       builder: (context) => FlutterDeckBulletList(
         useSteps: false,
         items: const [
+          'Cosa è Flutter?',
+          'Perchè sviluppare app per Linux con Flutter?',
+          'Cosa abbiamo a disposizione?',
           //TODO
-          'TODO',
         ],
       ),
     );
