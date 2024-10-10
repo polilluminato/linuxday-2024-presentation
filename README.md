@@ -35,6 +35,11 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
 
 * Gestione Finestra
   * [window_manager](https://pub.dev/packages/window_manager): This plugin allows Flutter desktop apps to resizing and repositioning the window
+* Notifiche
+  * [local_notifier](https://pub.dev/packages/local_notifier): This plugin allows Flutter desktop apps to displaying local notifications
+  * [elegant_notification](https://pub.dev/packages/elegant_notification): A new flutter package to display notifications on top of the screen, full customizable with built-in themes
+  * [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications): A cross platform plugin for displaying and scheduling local notifications for Flutter applications with the ability to customise for each platform
+  * [toastification](https://pub.dev/packages/toastification): Toastification is a Flutter package that allows you to easily show toast and notification messages in your application
 * Animazioni
   * [lottie](https://pub.dev/packages/lottie): Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player
   * [flutter_animate](https://pub.dev/packages/flutter_animate): Add beautiful animated effects & builders in Flutter, via an easy, customizable, unified API
@@ -46,6 +51,9 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
   * [pdf](https://pub.dev/packages/pdf): A pdf producer for Dart. It can create pdf files for both web or flutter
 * Stampa
   * [printing](https://pub.dev/packages/printing): Plugin that allows Flutter apps to generate and print documents to compatible printers on Android, iOS, macOS, Windows, and Linux, as well as web print
+* QrCode
+  * [qr_flutter](https://pub.dev/packages/qr_flutter): QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter
+
 ## 💎 Contribuire
 
 Se trovate un errore, non esitate a segnalarlo come issue e a descriverlo nel modo migliore possibile.

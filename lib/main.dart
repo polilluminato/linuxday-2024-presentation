@@ -12,7 +12,9 @@ import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
 import 'package:linuxday_2024_presentation/slides/notification/notification_slide.dart';
 import 'package:linuxday_2024_presentation/slides/pdf/pdf_slide.dart';
 import 'package:linuxday_2024_presentation/slides/print/print_slide.dart';
+import 'package:linuxday_2024_presentation/slides/social_repo/social_repo_slide.dart';
 import 'package:linuxday_2024_presentation/slides/spoiler_slide.dart';
+import 'package:linuxday_2024_presentation/slides/thankyou_slide.dart';
 import 'package:linuxday_2024_presentation/slides/window/window_slide.dart';
 import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
@@ -107,6 +109,8 @@ class LinuxDayPresentation extends StatelessWidget {
         //DatabaseSlide(),
         //AnalyticsSlide(),
         SpoilerSlide(),
+        SocialRepoSlide(),
+        ThankYouSlide()
       ],
     );
   }

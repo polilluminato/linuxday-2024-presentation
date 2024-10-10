@@ -5,11 +5,12 @@ class SpoilerSlide extends FlutterDeckSlideWidget {
   const SpoilerSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/app-repo-slide',
+            route: '/spoiler-slide',
+            title: 'Spoiler...',
             header: FlutterDeckHeaderConfiguration(
-              title: 'Spoiler...',
+              title: 'Last but not least...',
             ),
-            steps: 4, // Define the number of steps for the slide
+            steps: 5, // Define the number of steps for the slide
           ),
         );
 
@@ -21,12 +22,18 @@ class SpoilerSlide extends FlutterDeckSlideWidget {
         items: const [
           'Questa è una app Linux',
           '... fatta in Flutter',
+          '... con i package presentati',
           '... Open Source (MIT)',
           '... disponibile su GitHub',
         ],
       ),
-      //TODO: aggiungi una GIF che faccia vedere qualcuno di contento
-      rightBuilder: (context) => const Text('FlutterDeckBulletList demo'),
+      rightBuilder: (context) => FractionallySizedBox(
+        widthFactor: 0.5,
+        child: Image.asset(
+          'assets/gifs/spoiler.gif',
+          fit: BoxFit.contain,
+        ),
+      ),
     );
   }
 }
