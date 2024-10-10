@@ -10,7 +10,9 @@ import 'package:linuxday_2024_presentation/slides/charts/charts_slide.dart';
 import 'package:linuxday_2024_presentation/slides/disclaimer_slide.dart';
 import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
 import 'package:linuxday_2024_presentation/slides/pdf/pdf_slide.dart';
+import 'package:linuxday_2024_presentation/slides/print/print_slide.dart';
 import 'package:linuxday_2024_presentation/slides/spoiler_slide.dart';
+import 'package:linuxday_2024_presentation/slides/window/window_slide.dart';
 import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:window_manager/window_manager.dart';
@@ -41,7 +43,7 @@ class LinuxDayPresentation extends StatelessWidget {
       ),
       configuration: const FlutterDeckConfiguration(
         background: FlutterDeckBackgroundConfiguration(
-          dark: FlutterDeckBackground.solid(BrandColors.backgroundColorDark),
+          dark: FlutterDeckBackground.solid(kBackgroundColorDark),
         ),
         controls: FlutterDeckControlsConfiguration(
           presenterToolbarVisible: true,
@@ -70,8 +72,8 @@ class LinuxDayPresentation extends StatelessWidget {
         ),
         showProgress: true,
         progressIndicator: FlutterDeckProgressIndicator.solid(
-          color: BrandColors.accentColor,
-          backgroundColor: BrandColors.accentColorDark,
+          color: kAccentColor,
+          backgroundColor: kAccentColorDark,
         ),
         transition: FlutterDeckTransition.fade(),
       ),
@@ -83,6 +85,8 @@ class LinuxDayPresentation extends StatelessWidget {
         //ApiCallSlide(),
         //AudioSlide(),
         //VideoSlide(),
+        WindowSlide(),
+        PrintSlide(),
         AnimationSlide(),
         ChartsSlide(),
         PdfSlide(),

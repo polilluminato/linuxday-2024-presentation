@@ -24,7 +24,7 @@ class PackageCard extends ConsumerWidget {
         return Container(
           decoration: BoxDecoration(
             border: Border.all(
-              color: BrandColors.onBackgroundColorLight,
+              color: kOnBackgroundColorLight,
               width: 1,
             ),
             borderRadius: kBorderRadiusSmall,

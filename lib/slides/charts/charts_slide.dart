@@ -29,6 +29,7 @@ class ChartsSlide extends FlutterDeckSlideWidget {
         return const SidebarColumn(
           children: [
             PackageCard(package: "fl_chart"),
+            PackageCard(package: "nimble_charts"),
           ],
         );
       },

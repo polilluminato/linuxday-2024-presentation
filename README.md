@@ -33,6 +33,8 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
 
 ## Packages
 
+* Gestione Finestra
+  * [window_manager](https://pub.dev/packages/window_manager): This plugin allows Flutter desktop apps to resizing and repositioning the window
 * Animazioni
   * [lottie](https://pub.dev/packages/lottie): Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player
   * [flutter_animate](https://pub.dev/packages/flutter_animate): Add beautiful animated effects & builders in Flutter, via an easy, customizable, unified API

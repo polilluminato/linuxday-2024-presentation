@@ -4,10 +4,10 @@ import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
 FlutterDeckThemeData getBrandThemeDataDark() {
   return FlutterDeckThemeData.dark().copyWith(
     splitSlideTheme: const FlutterDeckSplitSlideThemeData(
-      rightBackgroundColor: BrandColors.backgroundColorDark,
-      rightColor: BrandColors.onBackgroundColorDark,
-      leftBackgroundColor: BrandColors.backgroundColorLight,
-      leftColor: BrandColors.onBackgroundColorLight,
+      rightBackgroundColor: kBackgroundColorDark,
+      rightColor: kOnBackgroundColorDark,
+      leftBackgroundColor: kBackgroundColorLight,
+      leftColor: kOnBackgroundColorLight,
     ),
   );
 }
