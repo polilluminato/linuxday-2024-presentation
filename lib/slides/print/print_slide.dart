@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
+import 'package:linuxday_2024_presentation/styles/dimens.dart';
+import 'package:linuxday_2024_presentation/ui/action_button.dart';
 import 'package:linuxday_2024_presentation/ui/package_card.dart';
+import 'package:phosphor_flutter/phosphor_flutter.dart';
+import 'package:printing/printing.dart';
 
 class PrintSlide extends FlutterDeckSlideWidget {
   const PrintSlide()
@@ -26,9 +31,35 @@ class PrintSlide extends FlutterDeckSlideWidget {
         );
       },
       rightBuilder: (context) {
-        return Text(
-          'Here goes the RIGHT section content of the slide',
-          style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+        return Center(
+          child: Wrap(
+            spacing: kSpaceHuge,
+            runSpacing: kSpaceHuge,
+            runAlignment: WrapAlignment.spaceEvenly,
+            children: [
+              ActionButton(
+                text: "Print",
+                iconData: PhosphorIcons.printer(),
+                onTap: () async {
+                  final pdf = await rootBundle.load('assets/pdf/sample.pdf');
+                  await Printing.layoutPdf(
+                    onLayout: (_) => pdf.buffer.asUint8List(),
+                  );
+                },
+              ),
+              ActionButton(
+                text: "Share",
+                iconData: PhosphorIcons.export(),
+                onTap: () async {
+                  final pdf = await rootBundle.load('assets/pdf/sample.pdf');
+                  await Printing.sharePdf(
+                    bytes: pdf.buffer.asUint8List(),
+                    filename: 'shared-document.pdf',
+                  );
+                },
+              ),
+            ],
+          ),
         );
       },
     );

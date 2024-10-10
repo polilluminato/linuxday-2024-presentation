@@ -44,7 +44,8 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
 * PDF
   * [pdfrx](https://pub.dev/packages/pdfrx): pdfrx is a rich and fast PDF viewer implementation built on the top of PDFium. The plugin supports Android, iOS, Windows, macOS, Linux, and Web
   * [pdf](https://pub.dev/packages/pdf): A pdf producer for Dart. It can create pdf files for both web or flutter
-
+* Stampa
+  * [printing](https://pub.dev/packages/printing): Plugin that allows Flutter apps to generate and print documents to compatible printers on Android, iOS, macOS, Windows, and Linux, as well as web print
 ## 💎 Contribuire
 
 Se trovate un errore, non esitate a segnalarlo come issue e a descriverlo nel modo migliore possibile.
