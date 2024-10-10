@@ -26,7 +26,7 @@ class ActionButton extends StatelessWidget {
           borderRadius: kBorderRadiusSmall,
         ),
         width: getScreenWidth(context) * .15,
-        height: getScreenHeight(context) * .1,
+        height: getScreenHeight(context) * .11,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

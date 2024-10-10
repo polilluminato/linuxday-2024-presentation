@@ -9,12 +9,14 @@ import 'package:linuxday_2024_presentation/slides/animation/animation_slide.dart
 import 'package:linuxday_2024_presentation/slides/charts/charts_slide.dart';
 import 'package:linuxday_2024_presentation/slides/disclaimer_slide.dart';
 import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
+import 'package:linuxday_2024_presentation/slides/notification/notification_slide.dart';
 import 'package:linuxday_2024_presentation/slides/pdf/pdf_slide.dart';
 import 'package:linuxday_2024_presentation/slides/print/print_slide.dart';
 import 'package:linuxday_2024_presentation/slides/spoiler_slide.dart';
 import 'package:linuxday_2024_presentation/slides/window/window_slide.dart';
 import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
+import 'package:local_notifier/local_notifier.dart';
 import 'package:window_manager/window_manager.dart';
 
 void main() async {
@@ -22,6 +24,12 @@ void main() async {
   // Must add this line.
   await windowManager.ensureInitialized();
   setupLocator();
+
+  //Notification configuration
+  // Add in main method.
+  await localNotifier.setup(
+    appName: 'linuxday_2024_presentation',
+  );
 
   runApp(const ProviderScope(child: LinuxDayPresentation()));
 }
@@ -82,10 +90,10 @@ class LinuxDayPresentation extends StatelessWidget {
         AgendaSlide(),
         IntroFlutterSlide(),
         DisclaimerSlide(),
-        //ApiCallSlide(),
         //AudioSlide(),
         //VideoSlide(),
         WindowSlide(),
+        NotificationSlide(),
         AnimationSlide(),
         ChartsSlide(),
         PdfSlide(),
@@ -94,7 +102,6 @@ class LinuxDayPresentation extends StatelessWidget {
         //FilePickerSlide(),
         //MapsSlide(),
         //LoggingSlide(),
-        //NotificationSlide(),
         //MarkdownSlide(),
         //TablesSlide(),
         //DatabaseSlide(),

@@ -38,7 +38,7 @@ class DisclaimerSlide extends FlutterDeckSlideWidget {
                     'Ho provato personalmente tutti package presentati in questa presentazione'
                     ' ma se volete fondare una azienda, una app, una startup o un progetto'
                     ' che li utilizza fate le vostre prove e leggete la documentazione',
-                    style: FlutterDeckTheme.of(context).textTheme.header,
+                    style: FlutterDeckTheme.of(context).textTheme.subtitle,
                     textAlign: TextAlign.left,
                   ),
                   gapH(kSpaceHuge),
