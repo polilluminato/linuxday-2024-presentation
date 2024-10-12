@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:linuxday_2024_presentation/models/allinfopackage_model.dart';
 import 'package:linuxday_2024_presentation/provider/pubclient_provider.dart';
-import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
+import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:linuxday_2024_presentation/styles/dimens.dart';
 import 'package:linuxday_2024_presentation/ui/asyncvalue_widget.dart';
 import 'package:linuxday_2024_presentation/utils/utils.dart';
@@ -22,13 +22,7 @@ class PackageCard extends ConsumerWidget {
       data: allInfoPackage,
       widget: (singlePackageAllInfo) {
         return Container(
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: kOnBackgroundColorLight,
-              width: 1,
-            ),
-            borderRadius: kBorderRadiusSmall,
-          ),
+          decoration: getDefaultContainerDecoration(),
           padding: const EdgeInsets.all(kPaddingMain),
           margin: const EdgeInsets.only(bottom: kMarginHuge),
           child: Column(
