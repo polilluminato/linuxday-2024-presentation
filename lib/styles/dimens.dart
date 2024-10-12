@@ -28,3 +28,7 @@ const double kSliderHeight = 16;
 
 BorderRadius kBorderRadiusMain = BorderRadius.circular(kRoundedCornerMain);
 BorderRadius kBorderRadiusSmall = BorderRadius.circular(kRoundedCornerSmall);
+
+//Fonts
+const double kFontSizePlutoGridColumn = 16;
+const double kFontSizePlutoGridRow = 14;

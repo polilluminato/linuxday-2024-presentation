@@ -14,6 +14,7 @@ import 'package:linuxday_2024_presentation/slides/pdf/pdf_slide.dart';
 import 'package:linuxday_2024_presentation/slides/print/print_slide.dart';
 import 'package:linuxday_2024_presentation/slides/social_repo/social_repo_slide.dart';
 import 'package:linuxday_2024_presentation/slides/spoiler_slide.dart';
+import 'package:linuxday_2024_presentation/slides/tables/tables_slide.dart';
 import 'package:linuxday_2024_presentation/slides/thankyou_slide.dart';
 import 'package:linuxday_2024_presentation/slides/window/window_slide.dart';
 import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
@@ -87,30 +88,31 @@ class LinuxDayPresentation extends StatelessWidget {
         ),
         transition: FlutterDeckTransition.fade(),
       ),
-      slides: const [
-        FirstSlide(),
-        AgendaSlide(),
-        IntroFlutterSlide(),
-        DisclaimerSlide(),
+      slides: [
+        const FirstSlide(),
+        const AgendaSlide(),
+        const IntroFlutterSlide(),
+        const DisclaimerSlide(),
         //AudioSlide(),
         //VideoSlide(),
-        WindowSlide(),
-        NotificationSlide(),
-        AnimationSlide(),
-        ChartsSlide(),
-        PdfSlide(),
-        PrintSlide(),
+        const WindowSlide(),
+        const NotificationSlide(),
+        const AnimationSlide(),
+        const ChartsSlide(),
+        TablesSlide(),
+        //DatabaseSlide(),
+        const PdfSlide(),
+        const PrintSlide(),
         //WindowSlide(),
         //FilePickerSlide(),
         //MapsSlide(),
         //LoggingSlide(),
         //MarkdownSlide(),
-        //TablesSlide(),
-        //DatabaseSlide(),
+
         //AnalyticsSlide(),
-        SpoilerSlide(),
-        SocialRepoSlide(),
-        ThankYouSlide()
+        const SpoilerSlide(),
+        const SocialRepoSlide(),
+        const ThankYouSlide()
       ],
     );
   }

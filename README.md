@@ -46,6 +46,9 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
   * [rive](https://pub.dev/packages/rive): Rive Flutter Runtime. This package provides runtime functionality for playing back and interacting with animations built with the Rive editor 
 * Grafici
   * [fl_chart](https://pub.dev/packages/fl_chart): A highly customizable Flutter chart library that supports Line Chart, Bar Chart, Pie Chart, Scatter Chart, and Radar Chart
+* Tabelle
+  * [pluto_grid](https://pub.dev/packages/pluto_grid): PlutoGrid is a dataGrid that can be controlled by the keyboard on desktop and web. Of course, it works well on Android and IOS. (DataGrid, DataTable, Data Grid, Data Table, Sticky)
+  * [faker_dart](https://pub.dev/packages/faker_dart): Generate massive amounts of fake data in Dart & Flutter! A dart port of the famous faker.js
 * PDF
   * [pdfrx](https://pub.dev/packages/pdfrx): pdfrx is a rich and fast PDF viewer implementation built on the top of PDFium. The plugin supports Android, iOS, Windows, macOS, Linux, and Web
   * [pdf](https://pub.dev/packages/pdf): A pdf producer for Dart. It can create pdf files for both web or flutter
