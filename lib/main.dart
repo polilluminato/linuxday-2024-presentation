@@ -6,13 +6,14 @@ import 'package:linuxday_2024_presentation/provider/service_locator.dart';
 import 'package:linuxday_2024_presentation/slides/0_first_slide.dart';
 import 'package:linuxday_2024_presentation/slides/agenda_slide.dart';
 import 'package:linuxday_2024_presentation/slides/animation/animation_slide.dart';
+import 'package:linuxday_2024_presentation/slides/app_example.dart';
 import 'package:linuxday_2024_presentation/slides/charts/charts_slide.dart';
 import 'package:linuxday_2024_presentation/slides/disclaimer_slide.dart';
 import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
 import 'package:linuxday_2024_presentation/slides/notification/notification_slide.dart';
 import 'package:linuxday_2024_presentation/slides/pdf/pdf_slide.dart';
 import 'package:linuxday_2024_presentation/slides/print/print_slide.dart';
-import 'package:linuxday_2024_presentation/slides/social_repo/social_repo_slide.dart';
+import 'package:linuxday_2024_presentation/slides/social_repo_slide.dart';
 import 'package:linuxday_2024_presentation/slides/spoiler_slide.dart';
 import 'package:linuxday_2024_presentation/slides/tables/tables_slide.dart';
 import 'package:linuxday_2024_presentation/slides/thankyou_slide.dart';
@@ -92,6 +93,7 @@ class LinuxDayPresentation extends StatelessWidget {
         const FirstSlide(),
         const AgendaSlide(),
         const IntroFlutterSlide(),
+        const AppExampleSlide(),
         const DisclaimerSlide(),
         //AudioSlide(),
         //VideoSlide(),
