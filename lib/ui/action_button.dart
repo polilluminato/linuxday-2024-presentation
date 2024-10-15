@@ -9,11 +9,13 @@ class ActionButton extends StatelessWidget {
     required this.onTap,
     required this.text,
     required this.iconData,
+    this.height,
   });
 
   final String text;
   final IconData iconData;
   final VoidCallback onTap;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class ActionButton extends StatelessWidget {
           borderRadius: kBorderRadiusSmall,
         ),
         width: getScreenWidth(context) * .15,
-        height: getScreenHeight(context) * .11,
+        height: height ?? getScreenHeight(context) * .11,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
