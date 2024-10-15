@@ -1,6 +1,7 @@
 import 'package:faker_dart/faker_dart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:linuxday_2024_presentation/provider/service_locator.dart';
 import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:linuxday_2024_presentation/styles/dimens.dart';
@@ -32,7 +33,7 @@ class TablesSlide extends FlutterDeckSlideWidget {
         title: 'Company', field: 'company', type: PlutoColumnType.text()),
   ];
 
-  final faker = Faker.instance;
+  final faker = getIt<Faker>();
 
   @override
   FlutterDeckSlide build(BuildContext context) {
