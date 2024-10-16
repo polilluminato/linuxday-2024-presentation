@@ -53,6 +53,11 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
   * [drift](https://pub.dev/packages/drift): Drift is a reactive library to store relational data in Dart and Flutter applications
   * [postgres](https://pub.dev/packages/postgres): PostgreSQL database driver. Supports statement reuse and binary protocol and connection pooling
   * [stormberry](https://pub.dev/packages/stormberry): A strongly-typed postgres ORM to provide easy bindings between your dart classes and postgres database
+* Markdown
+  * [flutter_markdown](https://pub.dev/packages/flutter_markdown): A Markdown renderer for Flutter. Create rich text output, including text styles, tables, links, and more, from plain text data formatted with simple Markdown tags
+  * [markdown](https://pub.dev/packages/markdown): A portable Markdown library written in Dart that can parse Markdown into HTML
+  * [flutter_quill](https://pub.dev/packages/flutter_quill):A rich text editor built for Android, iOS, Web, and desktop platforms. It's the WYSIWYG editor and a Quill component for Flutter
+Grafici
 * PDF
   * [pdfrx](https://pub.dev/packages/pdfrx): pdfrx is a rich and fast PDF viewer implementation built on the top of PDFium. The plugin supports Android, iOS, Windows, macOS, Linux, and Web
   * [pdf](https://pub.dev/packages/pdf): A pdf producer for Dart. It can create pdf files for both web or flutter

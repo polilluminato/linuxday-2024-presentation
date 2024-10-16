@@ -16,6 +16,7 @@ dependencies:
     sdk: flutter
   flutter_animate: ^4.5.0
   flutter_deck: ^0.16.1
+  flutter_markdown: ^0.7.4
   flutter_riverpod: ^2.5.1
   flutter_svg: ^2.0.10+1
   get_it: ^8.0.0
@@ -49,5 +50,6 @@ flutter:
     - assets/images/
     - assets/pdf/
     - assets/animations/
+    - assets/markdown/
     - assets/svg/
     - assets/gifs/
