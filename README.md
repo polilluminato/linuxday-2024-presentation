@@ -1,3 +1,5 @@
+![Sviluppa la tua prima applicazione per Linux con Flutter](.github/screenshots/first_slide.png)
+
 <div align="center">
   <h2>Sviluppa la tua prima applicazione per Linux con Flutter</h2>
   <h5>Linux Day 2024 Presentation</h5>
