@@ -35,6 +35,9 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
 
 ## Packages
 
+* Audio
+  * [audioplayers](https://pub.dev/packages/audioplayers): A Flutter plugin to play multiple audio files simultaneously
+  * [flutter_soloud](https://pub.dev/packages/flutter_soloud): A low-level audio plugin for Flutter, mainly meant for games and immersive apps. Based on the SoLoud (C++) audio engine
 * Gestione Finestra
   * [window_manager](https://pub.dev/packages/window_manager): This plugin allows Flutter desktop apps to resizing and repositioning the window
 * Notifiche
