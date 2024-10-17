@@ -12,7 +12,7 @@ import 'package:linuxday_2024_presentation/ui/sidebar_column.dart';
 import 'package:linuxday_2024_presentation/utils/utils.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
-final trackIndexProvider = StateProvider<int>((ref) => 1);
+final trackIndexProvider = StateProvider<int>((ref) => 0);
 
 class AudioSlide extends FlutterDeckSlideWidget {
   AudioSlide()
@@ -92,6 +92,7 @@ class AudioSlide extends FlutterDeckSlideWidget {
                       return Consumer(
                         builder: (context, ref, child) {
                           return ListTile(
+                            selected: ref.watch(trackIndexProvider) == index,
                             leading: ref.watch(trackIndexProvider) == index
                                 ? Icon(
                                     PhosphorIcons.arrowFatLineRight(),
@@ -101,7 +102,7 @@ class AudioSlide extends FlutterDeckSlideWidget {
                               tracks[index].name,
                               style: FlutterDeckTheme.of(context)
                                   .textTheme
-                                  .bodyLarge,
+                                  .subtitle,
                             ),
                           );
                         },

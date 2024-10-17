@@ -30,7 +30,7 @@ class DatabaseSlide extends FlutterDeckSlideWidget {
         );
       },
       rightBuilder: (context) {
-        return DatabaseView();
+        return const DatabaseView();
       },
     );
   }

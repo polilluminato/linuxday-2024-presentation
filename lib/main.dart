@@ -20,16 +20,20 @@ import 'package:linuxday_2024_presentation/slides/social_repo_slide.dart';
 import 'package:linuxday_2024_presentation/slides/spoiler_slide.dart';
 import 'package:linuxday_2024_presentation/slides/tables/tables_slide.dart';
 import 'package:linuxday_2024_presentation/slides/thankyou_slide.dart';
+import 'package:linuxday_2024_presentation/slides/video/video_slide.dart';
 import 'package:linuxday_2024_presentation/slides/window/window_slide.dart';
 import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:local_notifier/local_notifier.dart';
+import 'package:media_kit/media_kit.dart';
 import 'package:window_manager/window_manager.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Must add this line.
   await windowManager.ensureInitialized();
+  // Necessary initialization for package:media_kit.
+  MediaKit.ensureInitialized();
   setupLocator();
 
   //Notification configuration
@@ -99,7 +103,7 @@ class LinuxDayPresentation extends StatelessWidget {
         const AppExampleSlide(),
         const DisclaimerSlide(),
         AudioSlide(),
-        //VideoSlide(),
+        const VideoSlide(),
         const WindowSlide(),
         const NotificationSlide(),
         const AnimationSlide(),

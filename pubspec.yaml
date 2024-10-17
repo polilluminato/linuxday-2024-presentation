@@ -23,6 +23,9 @@ dependencies:
   get_it: ^8.0.0
   local_notifier: ^0.1.6
   lottie: ^3.1.2
+  media_kit: ^1.1.11
+  media_kit_libs_video: ^1.0.5
+  media_kit_video: ^1.2.5
   pdfrx: ^1.0.84
   phosphor_flutter: ^2.1.0
   pluto_grid: ^8.0.0
@@ -55,3 +58,4 @@ flutter:
     - assets/markdown/
     - assets/svg/
     - assets/gifs/
+    - assets/video/
