@@ -113,54 +113,56 @@ class AudioSlide extends FlutterDeckSlideWidget {
               ],
             ),
             gapH(kSpaceHuge * 4),
-            Consumer(builder: (context, ref, child) {
-              return Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ActionButton(
-                    text: "Pause",
-                    iconData: PhosphorIcons.pause(),
-                    onTap: () {
-                      audioProvider.pause();
-                    },
-                    height: 60,
-                  ),
-                  ActionButton(
-                    text: "Play",
-                    iconData: PhosphorIcons.play(),
-                    onTap: () async {
-                      await play(tracks[ref.read(trackIndexProvider)]);
-                    },
-                  ),
-                  ActionButton(
-                    text: "Stop",
-                    iconData: PhosphorIcons.stop(),
-                    onTap: () {
-                      audioProvider.stop();
-                    },
-                    height: 60,
-                  ),
-                  ActionButton(
-                    text: "Skip",
-                    iconData: PhosphorIcons.skipForward(),
-                    onTap: () async {
-                      int selectedIndex = ref.read(trackIndexProvider);
-                      if (selectedIndex < tracks.length - 1) {
-                        ref
-                            .read(trackIndexProvider.notifier)
-                            .update((state) => state + 1);
-                      } else {
-                        ref
-                            .read(trackIndexProvider.notifier)
-                            .update((state) => 0);
-                      }
-                      await play(tracks[ref.read(trackIndexProvider)]);
-                    },
-                    height: 60,
-                  ),
-                ],
-              );
-            })
+            Consumer(
+              builder: (context, ref, child) {
+                return Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ActionButton(
+                      text: "Pause",
+                      iconData: PhosphorIcons.pause(),
+                      onTap: () {
+                        audioProvider.pause();
+                      },
+                      height: 60,
+                    ),
+                    ActionButton(
+                      text: "Play",
+                      iconData: PhosphorIcons.play(),
+                      onTap: () async {
+                        await play(tracks[ref.read(trackIndexProvider)]);
+                      },
+                    ),
+                    ActionButton(
+                      text: "Stop",
+                      iconData: PhosphorIcons.stop(),
+                      onTap: () {
+                        audioProvider.stop();
+                      },
+                      height: 60,
+                    ),
+                    ActionButton(
+                      text: "Skip",
+                      iconData: PhosphorIcons.skipForward(),
+                      onTap: () async {
+                        int selectedIndex = ref.read(trackIndexProvider);
+                        if (selectedIndex < tracks.length - 1) {
+                          ref
+                              .read(trackIndexProvider.notifier)
+                              .update((state) => state + 1);
+                        } else {
+                          ref
+                              .read(trackIndexProvider.notifier)
+                              .update((state) => 0);
+                        }
+                        await play(tracks[ref.read(trackIndexProvider)]);
+                      },
+                      height: 60,
+                    ),
+                  ],
+                );
+              },
+            )
           ],
         );
       },

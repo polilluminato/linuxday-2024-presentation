@@ -70,6 +70,8 @@ Grafici
   * [pdf](https://pub.dev/packages/pdf): A pdf producer for Dart. It can create pdf files for both web or flutter
 * Stampa
   * [printing](https://pub.dev/packages/printing): Plugin that allows Flutter apps to generate and print documents to compatible printers on Android, iOS, macOS, Windows, and Linux, as well as web print
+* Mappe
+  * [flutter_map](https://pub.dev/packages/flutter_map): A versatile mapping package for Flutter, that's simple and easy to learn, yet completely customizable and configurable
 * QrCode
   * [qr_flutter](https://pub.dev/packages/qr_flutter): QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter
 

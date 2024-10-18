@@ -12,6 +12,7 @@ import 'package:linuxday_2024_presentation/slides/charts/charts_slide.dart';
 import 'package:linuxday_2024_presentation/slides/database/database_slide.dart';
 import 'package:linuxday_2024_presentation/slides/disclaimer_slide.dart';
 import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
+import 'package:linuxday_2024_presentation/slides/maps/maps_slide.dart';
 import 'package:linuxday_2024_presentation/slides/markdown/markdown_slide.dart';
 import 'package:linuxday_2024_presentation/slides/notification/notification_slide.dart';
 import 'package:linuxday_2024_presentation/slides/pdf/pdf_slide.dart';
@@ -115,7 +116,7 @@ class LinuxDayPresentation extends StatelessWidget {
         const PrintSlide(),
         //WindowSlide(),
         //FilePickerSlide(),
-        //MapsSlide(),
+        const MapsSlide(),
         //LoggingSlide(),
 
         //AnalyticsSlide(),
