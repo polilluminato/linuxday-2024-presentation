@@ -23,7 +23,7 @@ class IntroFlutterSlide extends FlutterDeckSlideWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/flutter-logo.png',
+              'assets/images/logo/flutter.png',
               width: getScreenWidth(context) * .3,
             ),
             const SizedBox(height: kMarginMain),

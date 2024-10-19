@@ -38,7 +38,7 @@ class PrintSlide extends FlutterDeckSlideWidget {
             runAlignment: WrapAlignment.spaceEvenly,
             children: [
               ActionButton(
-                text: "Print",
+                text: "Stampa",
                 iconData: PhosphorIcons.printer(),
                 onTap: () async {
                   final pdf = await rootBundle.load('assets/pdf/sample.pdf');
@@ -48,7 +48,7 @@ class PrintSlide extends FlutterDeckSlideWidget {
                 },
               ),
               ActionButton(
-                text: "Share",
+                text: "Condividi",
                 iconData: PhosphorIcons.export(),
                 onTap: () async {
                   final pdf = await rootBundle.load('assets/pdf/sample.pdf');

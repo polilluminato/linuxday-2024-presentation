@@ -23,7 +23,7 @@ class DatabaseView extends ConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               ActionButton(
-                text: "Add Random",
+                text: "Crea",
                 iconData: PhosphorIcons.userCirclePlus(),
                 onTap: () async {
                   ref.read(addRandomAddressBookProvider);
@@ -32,7 +32,7 @@ class DatabaseView extends ConsumerWidget {
               ),
               gapW(kSpaceBig),
               ActionButton(
-                text: "Delete First",
+                text: "Elimina",
                 iconData: PhosphorIcons.userCircleMinus(),
                 onTap: () async {
                   ref.read(deleteOldestAddressBookProvider);

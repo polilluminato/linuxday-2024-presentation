@@ -17,7 +17,7 @@ class ThankYouSlide extends FlutterDeckSlideWidget {
         child: FractionallySizedBox(
           heightFactor: 0.7,
           child: Image.asset(
-            'assets/gifs/thank-you.gif',
+            'assets/images/penguin/thank-you.jpg',
             fit: BoxFit.contain,
           ),
         ),

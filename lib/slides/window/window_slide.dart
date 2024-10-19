@@ -47,14 +47,14 @@ class WindowSlide extends FlutterDeckSlideWidget {
               ),
               ActionButton(
                 iconData: PhosphorIcons.arrowsOut(),
-                text: "FullScreen",
+                text: "Full Screen",
                 onTap: () async {
                   await windowManager.maximize();
                 },
               ),
               ActionButton(
                 iconData: PhosphorIcons.minusSquare(),
-                text: "Minimized",
+                text: "Minimizza",
                 onTap: () async {
                   await windowManager.minimize();
                 },

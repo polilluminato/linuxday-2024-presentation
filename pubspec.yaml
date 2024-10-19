@@ -54,6 +54,9 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/talker/
+    - assets/images/logo/
+    - assets/images/penguin/
     - assets/audio/
     - assets/pdf/
     - assets/animations/

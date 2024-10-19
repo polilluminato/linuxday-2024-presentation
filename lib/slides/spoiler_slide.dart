@@ -30,7 +30,7 @@ class SpoilerSlide extends FlutterDeckSlideWidget {
       rightBuilder: (context) => FractionallySizedBox(
         widthFactor: 0.5,
         child: Image.asset(
-          'assets/gifs/spoiler.gif',
+          'assets/images/penguin/spoiler.jpg',
           fit: BoxFit.contain,
         ),
       ),

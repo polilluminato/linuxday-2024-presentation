@@ -135,7 +135,8 @@ class MapsSlide extends FlutterDeckSlideWidget {
                                   width: 70,
                                   height: 70,
                                   point: const LatLng(45.519, 9.2135),
-                                  child: Image.asset("assets/images/tux.png"),
+                                  child:
+                                      Image.asset("assets/images/logo/tux.png"),
                                 )
                               : const Marker(
                                   point: LatLng(0, 0),
@@ -146,8 +147,8 @@ class MapsSlide extends FlutterDeckSlideWidget {
                                   width: 70,
                                   height: 70,
                                   point: const LatLng(45.5175, 9.209),
-                                  child:
-                                      Image.asset("assets/images/windows.png"),
+                                  child: Image.asset(
+                                      "assets/images/logo/windows.png"),
                                 )
                               : const Marker(
                                   point: LatLng(0, 0),
@@ -158,7 +159,8 @@ class MapsSlide extends FlutterDeckSlideWidget {
                                   width: 70,
                                   height: 70,
                                   point: const LatLng(45.519, 9.217),
-                                  child: Image.asset("assets/images/apple.png"),
+                                  child: Image.asset(
+                                      "assets/images/logo/apple.png"),
                                 )
                               : const Marker(
                                   point: LatLng(0, 0),

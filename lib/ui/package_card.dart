@@ -51,11 +51,6 @@ class PackageCard extends ConsumerWidget {
                 ],
               ),
               const Divider(),
-              /*Text(
-                singlePackageAllInfo.package.description,
-                style: textTheme.titleMedium,
-              ),*/
-              gapH(kSpaceBig),
               Row(
                 children: [
                   Icon(
