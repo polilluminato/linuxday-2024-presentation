@@ -6,7 +6,7 @@ import 'package:linuxday_2024_presentation/provider/service_locator.dart';
 import 'package:linuxday_2024_presentation/slides/0_first_slide.dart';
 import 'package:linuxday_2024_presentation/slides/agenda_slide.dart';
 import 'package:linuxday_2024_presentation/slides/animation/animation_slide.dart';
-import 'package:linuxday_2024_presentation/slides/app_example.dart';
+import 'package:linuxday_2024_presentation/slides/app_example_slide.dart';
 import 'package:linuxday_2024_presentation/slides/audio/audio_slide.dart';
 import 'package:linuxday_2024_presentation/slides/charts/charts_slide.dart';
 import 'package:linuxday_2024_presentation/slides/database/database_slide.dart';
