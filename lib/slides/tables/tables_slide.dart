@@ -58,6 +58,8 @@ class TablesSlide extends FlutterDeckSlideWidget {
         return const SidebarColumn(
           children: [
             PackageCard(package: "pluto_grid"),
+            PackageCard(package: "flutter_expandable_table"),
+            PackageCard(package: "data_table_2"),
           ],
         );
       },

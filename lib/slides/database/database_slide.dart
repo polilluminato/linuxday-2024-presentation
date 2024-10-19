@@ -25,6 +25,7 @@ class DatabaseSlide extends FlutterDeckSlideWidget {
           children: [
             PackageCard(package: "drift"),
             PackageCard(package: "postgres"),
+            PackageCard(package: "objectbox"),
             PackageCard(package: "stormberry"),
           ],
         );

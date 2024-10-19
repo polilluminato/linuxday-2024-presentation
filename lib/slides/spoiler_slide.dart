@@ -17,18 +17,24 @@ class SpoilerSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.split(
-      leftBuilder: (context) => FlutterDeckBulletList(
-        useSteps: true, // Enable steps for the bullet list
-        items: const [
-          'Questa è una app Linux',
-          '... fatta in Flutter',
-          '... con i package presentati',
-          '... Open Source (MIT)',
-          '... disponibile su GitHub',
-        ],
+      splitRatio: const SplitSlideRatio(
+        left: 3,
+        right: 2,
+      ),
+      leftBuilder: (context) => Center(
+        child: FlutterDeckBulletList(
+          useSteps: true, // Enable steps for the bullet list
+          items: const [
+            'Questa è una app Linux',
+            '... fatta in Flutter',
+            '... con i package presentati',
+            '... Open Source (MIT)',
+            '... disponibile su GitHub',
+          ],
+        ),
       ),
       rightBuilder: (context) => FractionallySizedBox(
-        widthFactor: 0.5,
+        widthFactor: 0.8,
         child: Image.asset(
           'assets/images/penguin/spoiler.jpg',
           fit: BoxFit.contain,

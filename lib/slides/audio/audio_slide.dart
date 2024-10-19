@@ -80,8 +80,9 @@ class AudioSlide extends FlutterDeckSlideWidget {
               children: [
                 gapW(kSpaceHuge * 2),
                 Image.asset(
-                  'assets/gifs/cat-dj.gif',
+                  'assets/images/penguin/audio.jpg',
                   fit: BoxFit.cover,
+                  width: getScreenWidth(context) * .2,
                 ),
                 gapW(kSpaceHuge * 2),
                 Expanded(
@@ -92,10 +93,10 @@ class AudioSlide extends FlutterDeckSlideWidget {
                       return Consumer(
                         builder: (context, ref, child) {
                           return ListTile(
-                            selected: ref.watch(trackIndexProvider) == index,
                             leading: ref.watch(trackIndexProvider) == index
                                 ? Icon(
                                     PhosphorIcons.arrowFatLineRight(),
+                                    size: 44,
                                   )
                                 : null,
                             title: Text(

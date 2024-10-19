@@ -14,15 +14,27 @@ class AgendaSlide extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(
-      builder: (context) => FlutterDeckBulletList(
-        useSteps: false,
-        items: const [
-          'Cosa è Flutter?',
-          'Perchè sviluppare app per Linux con Flutter?',
-          'Cosa abbiamo a disposizione?',
-          //TODO
-        ],
+    return FlutterDeckSlide.split(
+      splitRatio: const SplitSlideRatio(
+        left: 3,
+        right: 2,
+      ),
+      leftBuilder: (context) => Center(
+        child: FlutterDeckBulletList(
+          useSteps: false,
+          items: const [
+            'Intro Flutter',
+            'Esempi di app Flutter per Linux',
+            'Package a disposizione ed esempi',
+          ],
+        ),
+      ),
+      rightBuilder: (context) => FractionallySizedBox(
+        widthFactor: .9,
+        child: Image.asset(
+          'assets/images/penguin/agenda.jpg',
+          fit: BoxFit.contain,
+        ),
       ),
     );
   }

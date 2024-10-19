@@ -55,10 +55,13 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
   * [fl_chart](https://pub.dev/packages/fl_chart): A highly customizable Flutter chart library that supports Line Chart, Bar Chart, Pie Chart, Scatter Chart, and Radar Chart
 * Tabelle
   * [pluto_grid](https://pub.dev/packages/pluto_grid): PlutoGrid is a dataGrid that can be controlled by the keyboard on desktop and web. Of course, it works well on Android and IOS. (DataGrid, DataTable, Data Grid, Data Table, Sticky)
+  * [flutter_expandable_table](https://pub.dev/packages/flutter_expandable_table): A Flutter widget for create an expandable table with header and first column fixed
+  * [data_table_2](https://pub.dev/packages/data_table_2): In-place substitute for Flutter's DataTable and PaginatedDataTable with fixed/sticky headers and few extra features
   * [faker_dart](https://pub.dev/packages/faker_dart): Generate massive amounts of fake data in Dart & Flutter! A dart port of the famous faker.js
 * Database
   * [drift](https://pub.dev/packages/drift): Drift is a reactive library to store relational data in Dart and Flutter applications
   * [postgres](https://pub.dev/packages/postgres): PostgreSQL database driver. Supports statement reuse and binary protocol and connection pooling
+  * [objectbox](https://pub.dev/packages/objectbox): Flutter database for super-fast NoSQL ACID compliant object persistence
   * [stormberry](https://pub.dev/packages/stormberry): A strongly-typed postgres ORM to provide easy bindings between your dart classes and postgres database
 * Markdown
   * [flutter_markdown](https://pub.dev/packages/flutter_markdown): A Markdown renderer for Flutter. Create rich text output, including text styles, tables, links, and more, from plain text data formatted with simple Markdown tags

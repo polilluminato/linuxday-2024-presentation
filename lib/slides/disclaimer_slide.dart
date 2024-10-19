@@ -9,6 +9,9 @@ class DisclaimerSlide extends FlutterDeckSlideWidget {
           configuration: const FlutterDeckSlideConfiguration(
             route: '/disclaimer-slide',
             title: 'Disclaimer',
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Disclaimer',
+            ),
           ),
         );
 
@@ -22,13 +25,13 @@ class DisclaimerSlide extends FlutterDeckSlideWidget {
           children: [
             gapW(getScreenWidth(context) * .1),
             SizedBox(
-              width: 300,
+              width: getScreenWidth(context) * .25,
               child: Image.asset(
-                'assets/gifs/pengiun-alert.gif',
+                'assets/images/penguin/alert.jpg',
                 fit: BoxFit.cover,
               ),
             ),
-            gapW(kSpaceHuge),
+            gapW(getScreenWidth(context) * .07),
             Flexible(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -45,7 +48,7 @@ class DisclaimerSlide extends FlutterDeckSlideWidget {
                   Text(
                     '* se il progetto prende piede e volete fare una donazione al'
                     ' sottoscritto i miei contatti sono alla fine 😉',
-                    style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+                    style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
                     textAlign: TextAlign.left,
                   ),
                 ],

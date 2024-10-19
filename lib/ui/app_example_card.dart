@@ -22,7 +22,7 @@ class AppExampleCard extends StatelessWidget {
     return Container(
       width: getScreenWidth(context) * .3,
       decoration: getDefaultContainerDecoration(),
-      padding: const EdgeInsets.all(kPaddingTiny),
+      padding: const EdgeInsets.all(kPaddingMain),
       child: Column(
         children: [
           Image.network(
@@ -31,6 +31,7 @@ class AppExampleCard extends StatelessWidget {
             fit: BoxFit.cover,
             height: getScreenHeight(context) * .25,
           ),
+          gapH(kSpaceMain),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
