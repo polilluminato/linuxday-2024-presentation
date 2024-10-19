@@ -3,6 +3,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:latlong2/latlong.dart';
+import 'package:linuxday_2024_presentation/slides/maps/map_switch_view.dart';
 import 'package:linuxday_2024_presentation/styles/brand_colors.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
 import 'package:linuxday_2024_presentation/styles/dimens.dart';
@@ -49,55 +50,25 @@ class MapsSlide extends FlutterDeckSlideWidget {
                 return Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    TextButton.icon(
-                      icon: Switch.adaptive(
-                        value: ref.watch(logoFlutterProvider),
-                        onChanged: (value) => {},
-                      ),
-                      label: const Text('Marker Flutter'),
-                      onPressed: () => ref
-                          .read(logoFlutterProvider.notifier)
-                          .update((state) => !state),
+                    MapSwitchView(
+                      title: 'Marker Flutter',
+                      provider: logoFlutterProvider,
                     ),
-                    TextButton.icon(
-                      icon: Switch.adaptive(
-                        value: ref.watch(tuxProvider),
-                        onChanged: (value) => {},
-                      ),
-                      label: const Text('Friends marker'),
-                      onPressed: () => ref
-                          .read(tuxProvider.notifier)
-                          .update((state) => !state),
+                    MapSwitchView(
+                      title: 'Friend marker',
+                      provider: tuxProvider,
                     ),
-                    TextButton.icon(
-                      icon: Switch.adaptive(
-                        value: ref.watch(circleProvider),
-                        onChanged: (value) => {},
-                      ),
-                      label: const Text('Circle layer'),
-                      onPressed: () => ref
-                          .read(circleProvider.notifier)
-                          .update((state) => !state),
+                    MapSwitchView(
+                      title: 'Circle layer',
+                      provider: circleProvider,
                     ),
-                    TextButton.icon(
-                      icon: Switch.adaptive(
-                        value: ref.watch(windowsProvider),
-                        onChanged: (value) => {},
-                      ),
-                      label: const Text('Enemy n°1'),
-                      onPressed: () => ref
-                          .read(windowsProvider.notifier)
-                          .update((state) => !state),
+                    MapSwitchView(
+                      title: 'Enemy n°1',
+                      provider: windowsProvider,
                     ),
-                    TextButton.icon(
-                      icon: Switch.adaptive(
-                        value: ref.watch(appleProvider),
-                        onChanged: (value) => {},
-                      ),
-                      label: const Text('Enemy n°2'),
-                      onPressed: () => ref
-                          .read(appleProvider.notifier)
-                          .update((state) => !state),
+                    MapSwitchView(
+                      title: 'Enemy n°2',
+                      provider: appleProvider,
                     ),
                   ],
                 );
