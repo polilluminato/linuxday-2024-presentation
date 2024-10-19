@@ -12,6 +12,7 @@ import 'package:linuxday_2024_presentation/slides/charts/charts_slide.dart';
 import 'package:linuxday_2024_presentation/slides/database/database_slide.dart';
 import 'package:linuxday_2024_presentation/slides/disclaimer_slide.dart';
 import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
+import 'package:linuxday_2024_presentation/slides/logging/logging_slide.dart';
 import 'package:linuxday_2024_presentation/slides/maps/maps_slide.dart';
 import 'package:linuxday_2024_presentation/slides/markdown/markdown_slide.dart';
 import 'package:linuxday_2024_presentation/slides/notification/notification_slide.dart';
@@ -43,7 +44,11 @@ void main() async {
     appName: 'linuxday_2024_presentation',
   );
 
-  runApp(const ProviderScope(child: LinuxDayPresentation()));
+  runApp(
+    const ProviderScope(
+      child: LinuxDayPresentation(),
+    ),
+  );
 }
 
 class LinuxDayPresentation extends StatelessWidget {
@@ -71,11 +76,6 @@ class LinuxDayPresentation extends StatelessWidget {
             enabled: true,
             nextSlide: SingleActivator(LogicalKeyboardKey.arrowRight),
             previousSlide: SingleActivator(LogicalKeyboardKey.arrowLeft),
-            toggleMarker: SingleActivator(
-              LogicalKeyboardKey.keyM,
-              control: true,
-              meta: true,
-            ),
             toggleNavigationDrawer: SingleActivator(
               LogicalKeyboardKey.period,
               control: true,
@@ -105,8 +105,6 @@ class LinuxDayPresentation extends StatelessWidget {
         const DisclaimerSlide(),
         AudioSlide(),
         const VideoSlide(),
-        const WindowSlide(),
-        const NotificationSlide(),
         const AnimationSlide(),
         const ChartsSlide(),
         TablesSlide(),
@@ -114,10 +112,11 @@ class LinuxDayPresentation extends StatelessWidget {
         const MarkdownSlide(),
         const PdfSlide(),
         const PrintSlide(),
-        //WindowSlide(),
         //FilePickerSlide(),
         const MapsSlide(),
-        //LoggingSlide(),
+        const WindowSlide(),
+        const NotificationSlide(),
+        const LoggingSlide(),
 
         //AnalyticsSlide(),
         const SpoilerSlide(),

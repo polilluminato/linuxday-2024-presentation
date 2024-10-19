@@ -72,6 +72,11 @@ Grafici
   * [printing](https://pub.dev/packages/printing): Plugin that allows Flutter apps to generate and print documents to compatible printers on Android, iOS, macOS, Windows, and Linux, as well as web print
 * Mappe
   * [flutter_map](https://pub.dev/packages/flutter_map): A versatile mapping package for Flutter, that's simple and easy to learn, yet completely customizable and configurable
+* Logging
+  * [talker_flutter](https://pub.dev/packages/talker_flutter): Advanced error handler and logger package for flutter and dart. App monitoring, logs history, report sharing, custom logs, and etc
+  * [talker_dio_logger](https://pub.dev/packages/talker_dio_logger): Lightweight and customizable dio http client logger on talker base
+  * [talker_dio_logger](https://pub.dev/packages/talker_dio_logger): Lightweight and customizable BLoC state management library logger on talker base
+  * [talker_dio_logger](https://pub.dev/packages/talker_dio_logger): Lightweight and customizable Riverpod state management library logger on talker base
 * QrCode
   * [qr_flutter](https://pub.dev/packages/qr_flutter): QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter
 
