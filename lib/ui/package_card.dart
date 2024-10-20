@@ -9,9 +9,11 @@ import 'package:linuxday_2024_presentation/utils/utils.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class PackageCard extends ConsumerWidget {
-  const PackageCard({super.key, required this.package});
+  const PackageCard(
+      {super.key, required this.package, this.width = double.infinity});
 
   final String package;
+  final double width;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -22,6 +24,7 @@ class PackageCard extends ConsumerWidget {
       data: allInfoPackage,
       widget: (singlePackageAllInfo) {
         return Container(
+          width: width,
           decoration: getDefaultContainerDecoration(),
           padding: const EdgeInsets.all(kPaddingMain),
           margin: const EdgeInsets.only(bottom: kMarginHuge),

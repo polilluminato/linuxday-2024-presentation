@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2024_presentation/styles/brand_theme.dart';
+import 'package:linuxday_2024_presentation/styles/dimens.dart';
 import 'package:linuxday_2024_presentation/ui/package_card.dart';
 import 'package:linuxday_2024_presentation/ui/sidebar_column.dart';
 
@@ -29,9 +30,19 @@ class AnalyticsSlide extends FlutterDeckSlideWidget {
         );
       },
       rightBuilder: (context) {
-        return Text(
-          'Here goes the RIGHT section content of the slide',
-          style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+        return Center(
+          child: Padding(
+            padding: const EdgeInsets.all(kPaddingHuge),
+            child: FlutterDeckBulletList(
+              useSteps: false,
+              items: const [
+                'Comportamento dei propri utenti nella app',
+                'Tracking navigazione',
+                'Tracking chiamate HTTP',
+                'Tracking eventi (click, scroll, ecc.)',
+              ],
+            ),
+          ),
         );
       },
     );

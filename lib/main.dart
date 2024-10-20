@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:linuxday_2024_presentation/provider/service_locator.dart';
 import 'package:linuxday_2024_presentation/slides/0_first_slide.dart';
 import 'package:linuxday_2024_presentation/slides/agenda_slide.dart';
+import 'package:linuxday_2024_presentation/slides/analytics/analytics_slide.dart';
 import 'package:linuxday_2024_presentation/slides/animation/animation_slide.dart';
 import 'package:linuxday_2024_presentation/slides/app_example_slide.dart';
 import 'package:linuxday_2024_presentation/slides/audio/audio_slide.dart';
@@ -15,6 +16,7 @@ import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
 import 'package:linuxday_2024_presentation/slides/logging/logging_slide.dart';
 import 'package:linuxday_2024_presentation/slides/maps/maps_slide.dart';
 import 'package:linuxday_2024_presentation/slides/markdown/markdown_slide.dart';
+import 'package:linuxday_2024_presentation/slides/miscellanea/miscellanea_slide.dart';
 import 'package:linuxday_2024_presentation/slides/notification/notification_slide.dart';
 import 'package:linuxday_2024_presentation/slides/pdf/pdf_slide.dart';
 import 'package:linuxday_2024_presentation/slides/print/print_slide.dart';
@@ -117,8 +119,8 @@ class LinuxDayPresentation extends StatelessWidget {
         const WindowSlide(),
         const NotificationSlide(),
         const LoggingSlide(),
-
-        //AnalyticsSlide(),
+        const AnalyticsSlide(),
+        const MiscellaneaSlide(),
         const SpoilerSlide(),
         const SocialRepoSlide(),
         const ThankYouSlide()
