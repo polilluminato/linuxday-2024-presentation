@@ -33,6 +33,8 @@ class LoggingSlide extends FlutterDeckSlideWidget {
       },
       rightBuilder: (context) {
         return Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

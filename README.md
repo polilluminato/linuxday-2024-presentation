@@ -78,6 +78,10 @@ Grafici
   * [talker_dio_logger](https://pub.dev/packages/talker_dio_logger): Lightweight and customizable dio http client logger on talker base
   * [talker_dio_logger](https://pub.dev/packages/talker_dio_logger): Lightweight and customizable BLoC state management library logger on talker base
   * [talker_dio_logger](https://pub.dev/packages/talker_dio_logger): Lightweight and customizable Riverpod state management library logger on talker base
+* Analytics
+  [sentry_flutter](https://pub.dev/packages/sentry_flutter): Sentry SDK for Flutter. This package aims to support different Flutter targets by relying on the many platforms supported by Sentry with native SDKs
+  [amplify_analytics_pinpoint](https://pub.dev/packages/amplify_analytics_pinpoint): The Amplify Flutter Analytics category plugin using the AWS Pinpoint provider
+  [plausible_analytics](https://pub.dev/packages/plausible_analytics): A Flutter plugin for Plausible Analytics. This uses the events API to send clickevents and goals to Plausible Analytics
 * QrCode
   * [qr_flutter](https://pub.dev/packages/qr_flutter): QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter
 

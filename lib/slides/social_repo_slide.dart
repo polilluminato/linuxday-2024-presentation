@@ -37,7 +37,7 @@ class SocialRepoSlide extends FlutterDeckSlideWidget {
             style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
           ),
           Text(
-            "Software Engineer presso Soluzione1",
+            "Software Engineer presso Soluzione 1",
             style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
           ),
           gapH(kSpaceHuge * 2),
