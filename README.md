@@ -1,8 +1,6 @@
-![Sviluppa la tua prima applicazione per Linux con Flutter](.github/screenshots/first_slide.png)
+![Sviluppa la tua prima applicazione per Linux con Flutter](.github/screenshots/header.png)
 
 <div align="center">
-  <h2>Sviluppa la tua prima applicazione per Linux con Flutter</h2>
-  <h5>Linux Day 2024 Presentation</h5>
   <p>
     <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"></a>
     <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"></a>
