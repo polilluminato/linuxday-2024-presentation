@@ -9,12 +9,14 @@ class ActionButton extends StatelessWidget {
     required this.onTap,
     required this.text,
     required this.iconData,
+    this.width,
     this.height,
   });
 
   final String text;
   final IconData iconData;
   final VoidCallback onTap;
+  final double? width;
   final double? height;
 
   @override
@@ -27,7 +29,7 @@ class ActionButton extends StatelessWidget {
           color: kAccentColorBlack,
           borderRadius: kBorderRadiusSmall,
         ),
-        width: getScreenWidth(context) * .15,
+        width: width ?? getScreenWidth(context) * .15,
         height: height ?? getScreenHeight(context) * .11,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

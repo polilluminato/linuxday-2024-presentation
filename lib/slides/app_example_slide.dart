@@ -8,7 +8,7 @@ class AppExampleSlide extends FlutterDeckSlideWidget {
           configuration: const FlutterDeckSlideConfiguration(
             route: '/app-example-slide',
             header: FlutterDeckHeaderConfiguration(
-              title: 'App d\'esempio',
+              title: 'App d\'esempio su Linux',
             ),
           ),
         );

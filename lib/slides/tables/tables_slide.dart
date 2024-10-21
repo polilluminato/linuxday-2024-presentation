@@ -70,6 +70,7 @@ class TablesSlide extends FlutterDeckSlideWidget {
             configuration: const PlutoGridConfiguration(
               style: PlutoGridStyleConfig(
                 gridBackgroundColor: kBackgroundColorLight,
+                menuBackgroundColor: kBackgroundColorLight,
                 rowColor: kBackgroundColorLight,
                 cellTextStyle: TextStyle(
                   color: kOnBackgroundColorLight,
