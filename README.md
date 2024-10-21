@@ -82,6 +82,16 @@ Grafici
   * [sentry_flutter](https://pub.dev/packages/sentry_flutter): Sentry SDK for Flutter. This package aims to support different Flutter targets by relying on the many platforms supported by Sentry with native SDKs
   * [amplify_analytics_pinpoint](https://pub.dev/packages/amplify_analytics_pinpoint): The Amplify Flutter Analytics category plugin using the AWS Pinpoint provider
   * [plausible_analytics](https://pub.dev/packages/plausible_analytics): A Flutter plugin for Plausible Analytics. This uses the events API to send clickevents and goals to Plausible Analytics
+* Miscellanea
+  * [tray_manager](https://pub.dev/packages/tray_manager): This plugin allows Flutter desktop apps to defines system tray
+  * [hotkey_manager](https://pub.dev/packages/hotkey_manager): This plugin allows Flutter desktop apps to defines system/inapp wide hotkey (i.e. shortcut)
+  * [launch_at_startup](https://pub.dev/packages/launch_at_startup): This plugin allows Flutter desktop apps to Auto launch on startup / login
+  * [screen_capturer](https://pub.dev/packages/screen_capturer): This plugin allows Flutter desktop apps to capture screenshots
+  * [screen_retriever](https://pub.dev/packages/screen_retriever): This plugin allows Flutter desktop apps to Retrieve information about screen size, displays, cursor position, etc
+  * [clipboard_watcher](https://pub.dev/packages/clipboard_watcher): This plugin allows Flutter apps to watch clipboard changes
+  * [flutter_distributor](https://pub.dev/packages/flutter_distributor): A complete tool for packaging and publishing your Flutter apps
+  * [disks_desktop](https://pub.dev/packages/disks_desktop): A Flutter desktop library able to retrieve the installed devices information
+  * [contextual_menu](https://pub.dev/packages/contextual_menu): This plugin allows Flutter desktop apps to create native context menus
 * QrCode
   * [qr_flutter](https://pub.dev/packages/qr_flutter): QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter
 
