@@ -26,6 +26,8 @@ const double kRoundedCornerTiny = 4;
 
 const double kSliderHeight = 16;
 
+BorderRadius kBorderRadiusHuge = BorderRadius.circular(kRoundedCornerHuge);
+BorderRadius kBorderRadiusBig = BorderRadius.circular(kRoundedCornerBig);
 BorderRadius kBorderRadiusMain = BorderRadius.circular(kRoundedCornerMain);
 BorderRadius kBorderRadiusSmall = BorderRadius.circular(kRoundedCornerSmall);
 

@@ -26,18 +26,25 @@ class ActionButton extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(kPaddingMain),
         decoration: BoxDecoration(
-          color: kAccentColorBlack,
-          borderRadius: kBorderRadiusSmall,
+          color: kButtonBackgroundColor,
+          borderRadius: kBorderRadiusMain,
         ),
         width: width ?? getScreenWidth(context) * .15,
-        height: height ?? getScreenHeight(context) * .11,
+        height: height ?? getScreenHeight(context) * .08,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Icon(iconData, size: 32),
+            Icon(
+              iconData,
+              size: 32,
+              color: kButtonForegroundColor,
+            ),
             Text(
               text,
-              style: Theme.of(context).textTheme.headlineSmall,
+              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                    color: kButtonForegroundColor,
+                    fontWeight: FontWeight.w500,
+                  ),
             ),
           ],
         ),

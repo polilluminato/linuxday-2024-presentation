@@ -86,17 +86,17 @@ class NotificationSlide extends FlutterDeckSlideWidget {
             children: [
               ActionButton(
                 iconData: PhosphorIcons.bellRinging(),
-                text: "Native\nNotification",
+                text: "Nativa",
                 onTap: () => showNotification(),
               ),
               ActionButton(
                 iconData: PhosphorIcons.notification(),
-                text: "Notification\ntopRight",
+                text: "Top Right",
                 onTap: () => showNotificationUI(context, Alignment.topRight),
               ),
               ActionButton(
                 iconData: PhosphorIcons.notification(),
-                text: "Notification\nbottomRight",
+                text: "Bottom Right",
                 onTap: () => showNotificationUI(context, Alignment.bottomRight),
               ),
             ],
