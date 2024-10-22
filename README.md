@@ -71,6 +71,10 @@ Grafici
   * [pdf](https://pub.dev/packages/pdf): A pdf producer for Dart. It can create pdf files for both web or flutter
 * Stampa
   * [printing](https://pub.dev/packages/printing): Plugin that allows Flutter apps to generate and print documents to compatible printers on Android, iOS, macOS, Windows, and Linux, as well as web print
+* File Picker
+  * [file_picker](https://pub.dev/packages/file_picker): A package that allows you to use a native file explorer to pick single or multiple absolute file paths, with extension filtering support
+  * [file_selector](file_selector): Flutter plugin for opening and saving files, or selecting directories, using native file selection UI
+  * [image_picker](https://pub.dev/packages/image_picker): Flutter plugin for selecting images from the Android and iOS image library, and taking new pictures with the camera
 * Mappe
   * [flutter_map](https://pub.dev/packages/flutter_map): A versatile mapping package for Flutter, that's simple and easy to learn, yet completely customizable and configurable
 * Logging
