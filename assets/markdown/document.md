@@ -35,7 +35,7 @@ _You **can** combine them_
 
 ## Images
 
-![This is an alt text.](/image/sample.webp "This is a sample image.")
+![This is an alt text.](https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png "This is a sample image.")
 
 ## Links
 
@@ -65,3 +65,13 @@ alert(message);
 ## Inline code
 
 This web site is using `markedjs/marked`.
+
+## Code
+
+This is a code block
+
+```dart
+void main() {
+  print('Hello, World!');
+}  
+```

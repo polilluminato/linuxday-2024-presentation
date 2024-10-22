@@ -12,6 +12,7 @@ import 'package:linuxday_2024_presentation/slides/audio/audio_slide.dart';
 import 'package:linuxday_2024_presentation/slides/charts/charts_slide.dart';
 import 'package:linuxday_2024_presentation/slides/database/database_slide.dart';
 import 'package:linuxday_2024_presentation/slides/disclaimer_slide.dart';
+import 'package:linuxday_2024_presentation/slides/file_picker/file_picker_slide.dart';
 import 'package:linuxday_2024_presentation/slides/intro_flutter_slide.dart';
 import 'package:linuxday_2024_presentation/slides/logging/logging_slide.dart';
 import 'package:linuxday_2024_presentation/slides/maps/maps_slide.dart';
@@ -95,7 +96,7 @@ class LinuxDayPresentation extends StatelessWidget {
         showProgress: true,
         progressIndicator: FlutterDeckProgressIndicator.solid(
           color: kAccentColor,
-          backgroundColor: kAccentColorDark,
+          backgroundColor: kBackgroundColorDark,
         ),
         transition: FlutterDeckTransition.fade(),
       ),
@@ -114,7 +115,7 @@ class LinuxDayPresentation extends StatelessWidget {
         const MarkdownSlide(),
         const PdfSlide(),
         const PrintSlide(),
-        //FilePickerSlide(),
+        const FilePickerSlide(),
         const MapsSlide(),
         const WindowSlide(),
         const NotificationSlide(),
