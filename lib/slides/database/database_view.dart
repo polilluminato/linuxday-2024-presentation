@@ -28,7 +28,6 @@ class DatabaseView extends ConsumerWidget {
                 onTap: () async {
                   ref.read(addRandomAddressBookProvider);
                 },
-                height: 60,
               ),
               gapW(kSpaceBig),
               ActionButton(
@@ -37,7 +36,6 @@ class DatabaseView extends ConsumerWidget {
                 onTap: () async {
                   ref.read(deleteOldestAddressBookProvider);
                 },
-                height: 60,
               ),
             ],
           ),

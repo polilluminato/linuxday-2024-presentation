@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:linuxday_2024_presentation/styles/dimens.dart';
-import 'package:linuxday_2024_presentation/ui/ui_link_row.dart';
+import 'package:linuxday_2024_presentation/ui/action_button.dart';
 import 'package:linuxday_2024_presentation/utils/utils.dart';
+import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class QrCodeLink extends StatelessWidget {
@@ -24,9 +25,7 @@ class QrCodeLink extends StatelessWidget {
             top: kMarginHuge,
             bottom: kMarginMain,
           ),
-          padding: const EdgeInsets.all(
-            kPaddingMain,
-          ),
+          padding: const EdgeInsets.all(kPaddingMain),
           decoration: BoxDecoration(
             borderRadius: kBorderRadiusMain,
             color: Colors.white,
@@ -37,12 +36,13 @@ class QrCodeLink extends StatelessWidget {
             size: getScreenWidth(context) * 0.18,
           ),
         ),
-        const SizedBox(
-          height: kMarginMain,
-        ),
-        UiLinkRow(
-          label: link,
-          link: link,
+        gapH(kSpaceMain),
+        ActionButton(
+          height: 64,
+          width: 470,
+          iconData: PhosphorIcons.linkSimple(),
+          text: link,
+          onTap: () => openExternalURL(link),
         ),
       ],
     );

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2024_presentation/styles/dimens.dart';
-import 'package:linuxday_2024_presentation/ui/ui_link_row.dart';
+import 'package:linuxday_2024_presentation/ui/action_button.dart';
 import 'package:linuxday_2024_presentation/utils/utils.dart';
+import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class IntroFlutterSlide extends FlutterDeckSlideWidget {
   const IntroFlutterSlide()
@@ -40,9 +41,11 @@ class IntroFlutterSlide extends FlutterDeckSlideWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            const UiLinkRow(
-              label: "flutter.dev",
-              link: "https://flutter.dev",
+            ActionButton(
+              width: 200,
+              iconData: PhosphorIcons.linkSimple(),
+              text: "flutter.dev",
+              onTap: () => openExternalURL("https://flutter.dev"),
             ),
           ],
         ),

@@ -125,7 +125,6 @@ class AudioSlide extends FlutterDeckSlideWidget {
                       onTap: () {
                         audioProvider.pause();
                       },
-                      height: 60,
                     ),
                     ActionButton(
                       text: "Play",
@@ -133,6 +132,7 @@ class AudioSlide extends FlutterDeckSlideWidget {
                       onTap: () async {
                         await play(tracks[ref.read(trackIndexProvider)]);
                       },
+                      height: 88,
                     ),
                     ActionButton(
                       text: "Stop",
@@ -140,7 +140,6 @@ class AudioSlide extends FlutterDeckSlideWidget {
                       onTap: () {
                         audioProvider.stop();
                       },
-                      height: 60,
                     ),
                     ActionButton(
                       text: "Skip",
@@ -158,7 +157,6 @@ class AudioSlide extends FlutterDeckSlideWidget {
                         }
                         await play(tracks[ref.read(trackIndexProvider)]);
                       },
-                      height: 60,
                     ),
                   ],
                 );
