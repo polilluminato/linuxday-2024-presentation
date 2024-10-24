@@ -25,13 +25,13 @@ class DisclaimerSlide extends FlutterDeckSlideWidget {
           children: [
             gapW(getScreenWidth(context) * .1),
             SizedBox(
-              width: getScreenWidth(context) * .25,
+              width: getScreenWidth(context) * .15,
               child: Image.asset(
-                'assets/images/penguin/alert.jpg',
+                'assets/images/penguin/alert-left.jpg',
                 fit: BoxFit.cover,
               ),
             ),
-            gapW(getScreenWidth(context) * .07),
+            gapW(getScreenWidth(context) * .03),
             Flexible(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -52,6 +52,14 @@ class DisclaimerSlide extends FlutterDeckSlideWidget {
                     textAlign: TextAlign.left,
                   ),
                 ],
+              ),
+            ),
+            gapW(getScreenWidth(context) * .03),
+            SizedBox(
+              width: getScreenWidth(context) * .15,
+              child: Image.asset(
+                'assets/images/penguin/alert-right.jpg',
+                fit: BoxFit.cover,
               ),
             ),
             gapW(getScreenWidth(context) * .1),
