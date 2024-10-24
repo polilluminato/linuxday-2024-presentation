@@ -101,8 +101,7 @@ Grafici
 
 ## 💎 Contribuire
 
-Se trovate un errore, non esitate a segnalarlo come issue e a descriverlo nel modo migliore possibile.
-Se vuoi contribuire con del codice, crea prima una issue.
+Se trovi un errore, non esitare a segnalarlo come issue e a descriverlo nel modo migliore possibile. Se vuoi contribuire con del codice, crea prima una issue.
 
 ![Fork and contribute](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
