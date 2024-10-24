@@ -42,7 +42,6 @@ class IntroFlutterSlide extends FlutterDeckSlideWidget {
               ),
             ),
             ActionButton(
-              width: 200,
               iconData: PhosphorIcons.linkSimple(),
               text: "flutter.dev",
               onTap: () => openExternalURL("https://flutter.dev"),
