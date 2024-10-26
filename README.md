@@ -8,8 +8,6 @@
   </p>
 </div>
 
-La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.dev/packages/flutter_deck) di [Mangirdas Kazlauskas](https://kazlauskas.dev/about-me/).
-
 #### Abstract
 
 > Flutter si è affermato come framework per lo sviluppo di applicazioni multi-piattaforma, supportando Android, iOS, Web e sistemi Desktop (Linux, macOS e Windows). La sua crescente popolarità ha catturato l'attenzione di importanti aziende del settore, inclusa Canonical, che ha adottato Flutter per sviluppare applicazioni come l'installer di Ubuntu a partire dalla versione 23.04. In questo talk vedremo come si può sviluppare una applicazione per il desktop Linux con Flutter, concentrandoci sulle migliori pratiche e sui pacchetti più efficaci per implementare funzionalità, dimostrando come questo framework possa potenziare lo sviluppo di Software Libero e Open Source.
@@ -37,7 +35,7 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
   * [audioplayers](https://pub.dev/packages/audioplayers): A Flutter plugin to play multiple audio files simultaneously
   * [flutter_soloud](https://pub.dev/packages/flutter_soloud): A low-level audio plugin for Flutter, mainly meant for games and immersive apps. Based on the SoLoud (C++) audio engine
 * Video
-  * [media_kit](https://pub.dev/packages/media_kit): https://pub.dev/packages/media_kit
+  * [media_kit](https://pub.dev/packages/media_kit): A cross-platform video player & audio player for Flutter & Dart. Performant, stable, feature-proof & modular
 * Gestione Finestra
   * [window_manager](https://pub.dev/packages/window_manager): This plugin allows Flutter desktop apps to resizing and repositioning the window
 * Notifiche
@@ -104,6 +102,10 @@ Grafici
 Se trovi un errore, non esitare a segnalarlo come issue e a descriverlo nel modo migliore possibile. Se vuoi contribuire con del codice, crea prima una issue.
 
 ![Fork and contribute](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
+
+## 💡 Credits  
+
+La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.dev/packages/flutter_deck) di [Mangirdas Kazlauskas](https://kazlauskas.dev/about-me/).
 
 ## 📋 Licenza
 
