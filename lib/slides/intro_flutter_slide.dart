@@ -41,6 +41,7 @@ class IntroFlutterSlide extends FlutterDeckSlideWidget {
                 textAlign: TextAlign.center,
               ),
             ),
+            gapH(kSpaceHuge),
             ActionButton(
               iconData: PhosphorIcons.linkSimple(),
               text: "flutter.dev",

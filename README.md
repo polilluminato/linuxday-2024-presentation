@@ -36,13 +36,6 @@
   * [flutter_soloud](https://pub.dev/packages/flutter_soloud): A low-level audio plugin for Flutter, mainly meant for games and immersive apps. Based on the SoLoud (C++) audio engine
 * Video
   * [media_kit](https://pub.dev/packages/media_kit): A cross-platform video player & audio player for Flutter & Dart. Performant, stable, feature-proof & modular
-* Gestione Finestra
-  * [window_manager](https://pub.dev/packages/window_manager): This plugin allows Flutter desktop apps to resizing and repositioning the window
-* Notifiche
-  * [local_notifier](https://pub.dev/packages/local_notifier): This plugin allows Flutter desktop apps to displaying local notifications
-  * [elegant_notification](https://pub.dev/packages/elegant_notification): A new flutter package to display notifications on top of the screen, full customizable with built-in themes
-  * [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications): A cross platform plugin for displaying and scheduling local notifications for Flutter applications with the ability to customise for each platform
-  * [toastification](https://pub.dev/packages/toastification): Toastification is a Flutter package that allows you to easily show toast and notification messages in your application
 * Animazioni
   * [lottie](https://pub.dev/packages/lottie): Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player
   * [flutter_animate](https://pub.dev/packages/flutter_animate): Add beautiful animated effects & builders in Flutter, via an easy, customizable, unified API
@@ -75,6 +68,13 @@ Grafici
   * [image_picker](https://pub.dev/packages/image_picker): Flutter plugin for selecting images from the Android and iOS image library, and taking new pictures with the camera
 * Mappe
   * [flutter_map](https://pub.dev/packages/flutter_map): A versatile mapping package for Flutter, that's simple and easy to learn, yet completely customizable and configurable
+* Gestione Finestra
+  * [window_manager](https://pub.dev/packages/window_manager): This plugin allows Flutter desktop apps to resizing and repositioning the window
+* Notifiche
+  * [local_notifier](https://pub.dev/packages/local_notifier): This plugin allows Flutter desktop apps to displaying local notifications
+  * [elegant_notification](https://pub.dev/packages/elegant_notification): A new flutter package to display notifications on top of the screen, full customizable with built-in themes
+  * [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications): A cross platform plugin for displaying and scheduling local notifications for Flutter applications with the ability to customise for each platform
+  * [toastification](https://pub.dev/packages/toastification): Toastification is a Flutter package that allows you to easily show toast and notification messages in your application
 * Logging
   * [talker_flutter](https://pub.dev/packages/talker_flutter): Advanced error handler and logger package for flutter and dart. App monitoring, logs history, report sharing, custom logs, and etc
   * [talker_dio_logger](https://pub.dev/packages/talker_dio_logger): Lightweight and customizable dio http client logger on talker base

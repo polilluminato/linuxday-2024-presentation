@@ -20,7 +20,7 @@ class MiscellaneaSlide extends FlutterDeckSlideWidget {
     return FlutterDeckSlide.blank(builder: (context) {
       return Center(
         child: Wrap(
-          spacing: kSpaceHuge,
+          spacing: kSpaceHuge * 2,
           runSpacing: kSpaceHuge,
           runAlignment: WrapAlignment.center,
           alignment: WrapAlignment.spaceEvenly,
